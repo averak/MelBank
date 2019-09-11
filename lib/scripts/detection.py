@@ -2,8 +2,8 @@
 import pyaudio, wave
 import os, sys, gc, time, threading, math
 import numpy as np
-from lib.scripts.recording import Recording
-from lib.scripts.console import Console
+from recording import Recording
+from console import Console
 
 
 class Detection(Recording):
