@@ -11,7 +11,7 @@ class Recording(object):
         self.settings = {
             'format': pyaudio.paInt16,
             'channels': 1,
-            'rate': 16000,
+            'rate': 8000,
             'chunk': 1024,
             'past_second': 0.2
         }
@@ -106,6 +106,6 @@ if __name__ == '__main__':
     time.sleep(2)
     print('start')
     record.record_start.set()
-    time.sleep(1)
+    time.sleep(0.3)
     record.record_start.clear()
     record.is_exit = True

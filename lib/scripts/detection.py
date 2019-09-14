@@ -14,7 +14,7 @@ class Detection(Recording):
         self.f_stream = self._pa.open(
             format=pyaudio.paFloat32,
             channels=self.settings['channels'],
-            rate=self.settings['rate'] * 2,
+            rate=self.settings['rate'] * 4,
             input=True,
             output=False,
             frames_per_buffer=self.settings['chunk']
