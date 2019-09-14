@@ -93,6 +93,11 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/test/to_spec.py">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../Pake/pake.py">
           <value>
             <PaintGroupHighlightMap />
