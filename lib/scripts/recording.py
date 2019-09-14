@@ -103,7 +103,7 @@ class Recording(object):
 
 if __name__ == '__main__':
     record = Recording()
-    time.sleep(2)
+    time.sleep(1)
     print('start')
     record.record_start.set()
     time.sleep(0.3)
