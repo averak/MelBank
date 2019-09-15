@@ -1,7 +1,7 @@
 ## -----*----- Makefile -----*----- ##
 
 # リアルタイムで音声録音
-record.real: ./lib/scripts/detection.py
+record.always: ./lib/scripts/detection.py
 	@python ./lib/scripts/detection.py
 
 # 一度だけ音声録音
