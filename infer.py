@@ -16,6 +16,7 @@ class Infer(object):
         self.rate = wf.read('./config/format.wav')[0]
         self.speakers = 2
 
+        # ===== TEST ==========-
         rate, wav = wf.read('./tmp/source.wav')
         spec = self.__stft(wav, False)
         ispec = self.__istft(spec)
@@ -34,9 +35,11 @@ class Infer(object):
         model.add(LSTM(units=100, input_shape=(129, 33)))
         model.add(Dropout(0.1))
         model.add(Dense(self.speakers, activation='softmax'))
+        # コンパイル
         model.compile(optimizer='rmsprop',
                       loss='categorical_crossentropy',
                       metrics=['accuracy'])
+
         return model
 
     def __train(self, x, y):
