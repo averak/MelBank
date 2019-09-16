@@ -3,6 +3,11 @@
   <component name="StickySelectionHighlights">
     <option name="editorHighlights">
       <map>
+        <entry key="$USER_HOME$/.zshrc">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$USER_HOME$/Documents/テンプレート/README.md">
           <value>
             <PaintGroupHighlightMap />
