@@ -7,3 +7,7 @@ record.always: ./lib/scripts/detection.py
 # 一度だけ音声録音
 record.once: ./lib/scripts/recording.py
 	@python ./lib/scripts/recording.py
+
+# 教師データの作成
+teach.make:
+	@python ./make_teacher.py

@@ -28,7 +28,7 @@ class Infer(object):
         self.__model = self.__build()
         # モデルの読み込み
         self.load_model('./model/model.hdf5')
-        
+
     def __build(self):
         ## -----*----- NNを構築 -----*-----##
         model = Sequential()
@@ -66,6 +66,13 @@ class Infer(object):
         if to_int:
             wav = np.array(wav, dtype='int16')
         return wav
+
+    def nomalize(self, x, axis=None):
+        ## -----*----- 0~1に正規化 -----*----- ##
+        min = x.min(axis=axis, keepdims=True)
+        max = x.max(axis=axis, keepdims=True)
+        result = (x - min) / (max - min)
+        return result
 
     def load_model(self, path):
         ## -----*----- 学習済みモデルの読み込み -----*-----##
