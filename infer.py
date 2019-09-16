@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+from tensorflow.keras.layers import Input
+from tensorflow.keras.layers import Flatten
 from tensorflow.keras.layers import Dense
 from tensorflow.keras.layers import LSTM
 from tensorflow.keras.layers import Dropout
@@ -16,19 +18,27 @@ class Infer(object):
         self.rate = wf.read('./config/format.wav')[0]
         self.speakers = 2
 
-        self.__features_extracter()
-
         # モデルのビルド
         self.__model = self.__build()
+
+        x, y = self.__features_extracter()
+
+        self.__train(x, y)
+
+
         # モデルの読み込み
         self.load_model('./model/model.hdf5')
 
     def __build(self):
         ## -----*----- NNを構築 -----*-----##
         model = Sequential()
-        model.add(LSTM(units=100, input_shape=(129, 33)))
-        model.add(Dropout(0.1))
-        model.add(Dense(self.speakers, activation='softmax'))
+        #model.add(Input(shape=(129, 33)))
+        #model.add(Flatten())
+        model.add(LSTM(units=128, input_shape=(129, 33)))
+        model.add(Dropout(0.3))
+        model.add(Dense(129, activation='relu'))
+        model.add(Dropout(0.3))
+        model.add(Dense(129, activation='softmax'))
         # コンパイル
         model.compile(optimizer='rmsprop',
                       loss='categorical_crossentropy',
@@ -38,7 +48,7 @@ class Infer(object):
 
     def __train(self, x, y):
         ## -----*----- 学習 -----*-----##
-        self.__model.fit(x, y, nb_epoch=50, batch_size=30)
+        self.__model.fit(x, y, epochs=50, batch_size=30)
         return
 
     def __features_extracter(self):
@@ -63,12 +73,22 @@ class Infer(object):
         for i in range(num):
             x.append(None)
             for speaker in spec:
-                if x[-1] is None:
-                    x[-1] = speaker[i]
+                if x[i] is None:
+                    x[i] = speaker[i]
                 else:
-                    x[-1] += speaker[i]
+                    x[i] += speaker[i]
+            x[i] = np.array([self.nomalize(x[i])])
 
-            return
+            y.append(np.arange(x[i].shape[1]*x[i].shape[2]).reshape(x[i].shape[1], x[i].shape[2]))
+            for j in range(x[i].shape[1]):
+                for k in range(x[i].shape[2]):
+                    max = {'index': 0, 'value': 0.0}
+                    for speaker in range(len(spec)):
+                        if spec[speaker][i][j][k] >= max['value']:
+                            max['index'] = speaker
+                            max['value'] = spec[speaker][i][j][k]
+                    y[i][j][k] = max['index']
+            y[i] = np.array([y[i]])
 
         return x, y
 
