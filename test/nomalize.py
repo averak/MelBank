@@ -22,4 +22,4 @@ def stft(wav, to_log=True):
 rate, wav = wf.read('./tmp/source.wav')
 spec = stft(wav)
 print(spec)
-print(min_max(spec))
+print(nomalize(spec))
