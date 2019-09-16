@@ -103,6 +103,11 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/test/nomalize.py">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/test/plot_spec.py">
           <value>
             <PaintGroupHighlightMap />
