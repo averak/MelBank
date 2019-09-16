@@ -9,7 +9,7 @@ class Recording(object):
         self._pa = pyaudio.PyAudio()
         # 音声入力の設定
         self.settings = {
-            'format': pyaudio.paInt8, # 8量子化ビットサイズ
+            'format': pyaudio.paInt16,
             'channels': 1,
             'rate': 8000,
             'chunk': 1024,
@@ -76,8 +76,6 @@ class Recording(object):
         else:
             self.audio['past'].pop(0)
             self.audio['past'].append(self.input_audio())
-
-
 
     def save_audio(self):
         ## -----*----- 音声データ保存 -----*----- ##
