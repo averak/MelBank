@@ -28,7 +28,7 @@ class Infer(object):
         self.__model = self.__build()
         # モデルの読み込み
         self.load_model('./model/model.hdf5')
-
+        
     def __build(self):
         ## -----*----- NNを構築 -----*-----##
         model = Sequential()
