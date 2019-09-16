@@ -8,6 +8,10 @@ record.always: ./lib/scripts/detection.py
 record.once: ./lib/scripts/recording.py
 	@python ./lib/scripts/recording.py
 
-# 教師データの作成
-teach.make: ./make_teacher.py
+# 教師データの元を録音
+teach.record: ./make_teacher.py
 	@python ./make_teacher.py
+
+# 教師データを作成
+teach.build: ./lib/scripts/shift.py
+	@python ./lib/scripts/shift.py
