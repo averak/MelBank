@@ -1,7 +1,244 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e2d68238-6971-45d6-9a40-47ade6222eeb" name="Default Changelist" comment="ls" />
+    <list default="true" id="e2d68238-6971-45d6-9a40-47ade6222eeb" name="Default Changelist" comment="ls">
+      <change afterPath="$PROJECT_DIR$/lib/scripts/shift.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/106.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/107.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/108.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/109.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/110.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/111.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/112.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/113.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/114.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/115.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/116.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/117.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/118.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/119.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/120.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/121.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/122.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/123.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/124.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/125.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/126.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/127.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/128.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/129.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/130.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/131.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/132.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/133.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/134.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/135.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/136.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/137.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/138.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/139.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/140.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/141.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/142.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/143.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/144.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/145.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/146.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/147.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/148.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/149.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/150.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/151.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/152.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/153.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/154.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/155.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/156.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/157.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/158.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/159.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/160.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/161.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/162.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/163.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/164.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/165.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/166.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/167.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/168.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/169.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/170.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/171.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/172.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/173.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/174.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/175.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/176.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/177.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/178.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/179.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/180.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/181.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/182.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/183.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/184.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/185.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/186.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/187.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/188.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/189.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/190.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/191.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/192.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/193.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/194.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/195.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/196.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/197.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/198.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/199.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/200.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/201.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/202.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/203.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/204.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/205.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/206.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/207.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/208.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/800Hz/209.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/10.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/100.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/101.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/102.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/103.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/104.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/105.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/11.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/12.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/13.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/14.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/15.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/16.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/17.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/18.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/19.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/20.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/21.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/22.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/23.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/24.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/25.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/26.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/27.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/28.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/29.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/30.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/31.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/32.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/33.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/34.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/35.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/36.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/37.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/38.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/39.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/40.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/41.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/42.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/43.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/44.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/45.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/46.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/47.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/48.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/49.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/5.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/50.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/51.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/52.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/53.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/54.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/55.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/56.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/57.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/58.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/59.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/6.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/60.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/61.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/62.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/63.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/64.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/65.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/66.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/67.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/68.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/69.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/7.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/70.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/71.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/72.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/73.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/74.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/75.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/76.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/77.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/78.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/79.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/8.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/80.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/81.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/82.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/83.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/84.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/85.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/86.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/87.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/88.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/89.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/9.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/90.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/91.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/92.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/93.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/94.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/95.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/96.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/97.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/98.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/teach/あー/99.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/StickySelectionHighlights.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/StickySelectionHighlights.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infer.py" beforeDir="false" afterPath="$PROJECT_DIR$/infer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/make_teacher.py" beforeDir="false" afterPath="$PROJECT_DIR$/make_teacher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/speaker/800Hz/1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/recorded/800Hz/1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/speaker/800Hz/10.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/recorded/800Hz/10.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/speaker/800Hz/2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/recorded/800Hz/2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/speaker/800Hz/3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/recorded/800Hz/3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/speaker/800Hz/4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/recorded/800Hz/4.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/speaker/800Hz/5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/recorded/800Hz/5.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/speaker/800Hz/6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/recorded/800Hz/6.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/speaker/800Hz/7.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/recorded/800Hz/7.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/speaker/800Hz/8.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/recorded/800Hz/8.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/speaker/800Hz/9.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/recorded/800Hz/9.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/speaker/あー/1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/recorded/あー/1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/speaker/あー/10.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/recorded/あー/10.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/speaker/あー/2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/recorded/あー/2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/speaker/あー/3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/recorded/あー/3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/speaker/あー/4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/recorded/あー/4.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/speaker/あー/5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/recorded/あー/5.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/speaker/あー/6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/recorded/あー/6.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/speaker/あー/7.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/recorded/あー/7.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/speaker/あー/8.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/recorded/あー/8.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/speaker/あー/9.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/recorded/あー/9.wav" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,10 +253,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/infer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="398">
+              <caret line="67" column="24" lean-forward="true" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
               <folding>
                 <element signature="e#24#65#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/scripts/shift.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="489">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/make_teacher.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+              <folding>
+                <element signature="e#24#67#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -28,8 +286,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Makefile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+            <state relative-caret-position="208">
+              <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -38,7 +296,7 @@
         <entry file="file://$PROJECT_DIR$/test/nomalize.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="312">
-              <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
               <folding>
                 <element signature="e#23#41#0" expanded="true" />
               </folding>
@@ -47,19 +305,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/plot_spec.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/to_spec.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="24" />
+            <state relative-caret-position="104">
+              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+              <folding>
+                <element signature="e#23#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,6 +323,7 @@
       <find>@log</find>
       <find>save_</find>
       <find>self.model</find>
+      <find>__features_extracter</find>
     </findStrings>
     <replaceStrings>
       <replace>self.__model</replace>
@@ -104,12 +357,13 @@
         <option value="$PROJECT_DIR$/test/plot_spec.py" />
         <option value="$PROJECT_DIR$/test/plot_wav.py" />
         <option value="$USER_HOME$/.zshrc" />
-        <option value="$PROJECT_DIR$/test/to_spec.py" />
         <option value="$PROJECT_DIR$/../Sound_Source_Separation/make_teacher.py" />
         <option value="$PROJECT_DIR$/lib/scripts/recording.py" />
-        <option value="$PROJECT_DIR$/make_teacher.py" />
-        <option value="$PROJECT_DIR$/infer.py" />
         <option value="$PROJECT_DIR$/test/nomalize.py" />
+        <option value="$PROJECT_DIR$/test/to_spec.py" />
+        <option value="$PROJECT_DIR$/make_teacher.py" />
+        <option value="$PROJECT_DIR$/lib/scripts/shift.py" />
+        <option value="$PROJECT_DIR$/infer.py" />
         <option value="$PROJECT_DIR$/Makefile" />
       </list>
     </option>
@@ -181,19 +435,19 @@
       <workItem from="1567816087115" duration="3535000" />
       <workItem from="1568183800014" duration="10160000" />
       <workItem from="1568463792725" duration="551000" />
-      <workItem from="1568464364728" duration="19585000" />
+      <workItem from="1568464364728" duration="21421000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37905000" />
+    <option name="totallyTimeSpent" value="39741000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4985294" visible="true" weight="0.3035144" />
-      <window_info id="Structure" order="1" sideWeight="0.50147057" side_tool="true" visible="true" weight="0.3035144" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992636" visible="true" weight="0.3035144" />
+      <window_info id="Structure" order="1" sideWeight="0.50073636" side_tool="true" visible="true" weight="0.3035144" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -206,7 +460,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4993895" visible="true" weight="0.32673267" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4993895" visible="true" weight="0.32772276" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50061053" side_tool="true" weight="0.32857144" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
@@ -431,13 +685,6 @@
     <entry file="file://$PROJECT_DIR$/../Sound_Source_Separation/recording.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Sound_Source_Separation/make_teacher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="116" column="70" selection-start-line="116" selection-start-column="63" selection-end-line="116" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/scripts/recording.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1040">
@@ -448,54 +695,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/make_teacher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="e#24#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/to_spec.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/plot_spec.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/nomalize.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+        <state relative-caret-position="52">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="e#23#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/nomalize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+          <folding>
+            <element signature="e#23#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/to_spec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding>
+            <element signature="e#23#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Sound_Source_Separation/make_teacher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="116" column="70" selection-start-line="116" selection-start-column="63" selection-end-line="116" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Sound_Source_Separation/shift.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="29" column="29" selection-end-line="70" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/infer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="398">
+          <caret line="67" column="24" lean-forward="true" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
           <folding>
             <element signature="e#24#65#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/make_teacher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding>
+            <element signature="e#24#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/scripts/shift.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        <state relative-caret-position="208">
+          <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
         </state>
       </provider>
     </entry>

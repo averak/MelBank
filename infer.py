@@ -16,13 +16,7 @@ class Infer(object):
         self.rate = wf.read('./config/format.wav')[0]
         self.speakers = 2
 
-        # ===== TEST ==========-
-        rate, wav = wf.read('./tmp/source.wav')
-        spec = self.__stft(wav, False)
-        ispec = self.__istft(spec)
-        print(wav)
-        print(ispec)
-        print(spec.shape)
+        self.__features_extracter()
 
         # モデルのビルド
         self.__model = self.__build()
@@ -49,12 +43,30 @@ class Infer(object):
 
     def __features_extracter(self):
         ## -----*----- 特徴量を抽出 -----*----- ##
-        teacher = glob.glob('./tmp/audio/*.wav')
-        print(teacher)
-        return
+        x = []
+        y = []
+        speakers = []
 
-    def __stft(self, wav, to_log=True):
+        # ===== 音声一覧を格納 ===============
+        for speaker in glob.glob('./tmp/teach/*'):
+            speakers.append({})
+            speakers[-1]['name'] = speaker.split('/')[-1]
+            speakers[-1]['stft'] = []
+
+            files = glob.glob('./tmp/teach/{0}/*.wav'.format(speakers[-1]['name']))
+            for f in files:
+                speakers[-1]['stft'].append(self.__stft(file=f))
+
+        for speaker in speakers:
+            print(speaker['stft'][-1].shape)
+            return
+
+        return x, y
+
+    def __stft(self, wav=None, file=None, to_log=True):
         ## -----*----- 短時間フーリエ変換 -----*----- ##
+        if file != None:
+            wav = wf.read(file)[1]
         spec = signal.stft(wav, fs=self.rate, nperseg=256)[2]
         if to_log:
             spec = 10 * np.log10(np.abs(spec))

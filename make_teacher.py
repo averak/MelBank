@@ -4,7 +4,7 @@ import time
 import os
 
 # ===== 新規話者の登録 ===============
-dir = './tmp/speaker'
+dir = './tmp/recorded'
 
 # 標準入力で話者名を指定
 print('新規話者： ', end='')
