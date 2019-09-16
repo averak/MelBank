@@ -8,23 +8,38 @@ import glob, sys
 class Infer(object):
     def __init__(self):
         ## -----*----- コンストラクタ -----*-----##
+        rate, wav = wf.read('./tmp/source.wav')
+        spec = self.__stft(wav, False)
+        ispec = self.__istft(spec)
+        print(wav)
+        print(ispec)
+        self.__build()
+
+    def __build(self):
+        ## -----*----- NNを構築 -----*-----##
         return
 
     def __train(self):
         ## -----*----- 学習 -----*-----##
         return
 
-    def stft(self, wav, to_log=True):
-        ## -----*----- STFT -----*----- ##
-        _, _, spec = signal.stft(wav, fs=8000, nperseg=255)
+    def __features_extracter(self):
+        ## -----*----- 特徴量を抽出 -----*----- ##
+        return
+
+    def __stft(self, wav, to_log=True):
+        ## -----*----- 短時間フーリエ変換 -----*----- ##
+        _, _, spec = signal.stft(wav, fs=8000, nperseg=256)
         if to_log:
-            spec = 10 * np.log(np.abs(spec))
+            spec = 10 * np.log10(np.abs(spec))
         return spec
 
+    def __istft(self, spec, to_int=True):
+        ## -----*----- 逆短時間フーリエ変換 -----*----- ##
+        _, wav = signal.istft(spec, fs=8000, nperseg=256)
+        if to_int:
+            wav = np.array(wav,dtype='int16')
+        return wav
 
 if __name__ == '__main__':
     infer = Infer()
-    rate, wav = wf.read('./tmp/source.wav')
-    print(wav)
-    spec = infer.stft(wav)
-    print(spec)
