@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2d68238-6971-45d6-9a40-47ade6222eeb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/StickySelectionHighlights.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/StickySelectionHighlights.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infer.py" beforeDir="false" afterPath="$PROJECT_DIR$/infer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/scripts/recording.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/scripts/recording.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/make_teacher.py" beforeDir="false" afterPath="$PROJECT_DIR$/make_teacher.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/source.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/source.wav" afterDir="false" />
     </list>
@@ -19,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/infer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+            <state relative-caret-position="195">
+              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
               <folding>
                 <element signature="e#24#65#0" expanded="true" />
               </folding>
@@ -31,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/make_teacher.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="304">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="e#24#67#0" expanded="true" />
               </folding>
@@ -43,20 +47,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/scripts/recording.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+            <state relative-caret-position="108">
+              <caret line="83" column="25" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
               <folding>
                 <element signature="e#24#44#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Sound_Source_Separation/make_teacher.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="112" column="67" selection-start-line="112" selection-start-column="8" selection-end-line="112" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -100,7 +95,11 @@
     <findStrings>
       <find>@log</find>
       <find>save_</find>
+      <find>self.model</find>
     </findStrings>
+    <replaceStrings>
+      <replace>self.__model</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -130,10 +129,11 @@
         <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/test/plot_spec.py" />
         <option value="$PROJECT_DIR$/test/plot_wav.py" />
-        <option value="$PROJECT_DIR$/lib/scripts/recording.py" />
         <option value="$USER_HOME$/.zshrc" />
         <option value="$PROJECT_DIR$/test/to_spec.py" />
         <option value="$PROJECT_DIR$/infer.py" />
+        <option value="$PROJECT_DIR$/../Sound_Source_Separation/make_teacher.py" />
+        <option value="$PROJECT_DIR$/lib/scripts/recording.py" />
         <option value="$PROJECT_DIR$/make_teacher.py" />
       </list>
     </option>
@@ -231,12 +231,12 @@
       <workItem from="1567816087115" duration="3535000" />
       <workItem from="1568183800014" duration="10160000" />
       <workItem from="1568463792725" duration="551000" />
-      <workItem from="1568464364728" duration="13859000" />
+      <workItem from="1568464364728" duration="15092000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32179000" />
+    <option name="totallyTimeSpent" value="33412000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="0" width="1920" height="1080" extended-state="0" />
@@ -508,37 +508,37 @@
     <entry file="file://$PROJECT_DIR$/../Sound_Source_Separation/recording.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/infer.py">
+    <entry file="file://$PROJECT_DIR$/../Sound_Source_Separation/make_teacher.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding>
-            <element signature="e#24#65#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="358">
+          <caret line="116" column="70" selection-start-line="116" selection-start-column="63" selection-end-line="116" selection-end-column="70" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/scripts/recording.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        <state relative-caret-position="108">
+          <caret line="83" column="25" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
           <folding>
             <element signature="e#24#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Sound_Source_Separation/make_teacher.py">
+    <entry file="file://$PROJECT_DIR$/infer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="112" column="67" selection-start-line="112" selection-start-column="8" selection-end-line="112" selection-end-column="67" />
+        <state relative-caret-position="195">
+          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+          <folding>
+            <element signature="e#24#65#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/make_teacher.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="304">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="e#24#67#0" expanded="true" />
           </folding>

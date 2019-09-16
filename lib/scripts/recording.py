@@ -69,6 +69,8 @@ class Recording(object):
 
     def past_record(self, init=False):
         ## -----*----- 欠け補完部分の録音 -----*----- ##
+        if self.settings['past_second'] == 0:
+            return
         if init:
             self.audio['past'] = []
             for i in range(int(self.settings['rate'] / self.settings['chunk'] * self.settings['past_second'])):

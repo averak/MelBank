@@ -25,7 +25,7 @@ class Infer(object):
         print(spec.shape)
 
         # モデルのビルド
-        self.model = self.__build()
+        self.__model = self.__build()
         # モデルの読み込み
         self.load_model('./model/model.hdf5')
 
@@ -44,7 +44,7 @@ class Infer(object):
 
     def __train(self, x, y):
         ## -----*----- 学習 -----*-----##
-        self.model.fit(x, y, nb_epoch=50, batch_size=30)
+        self.__model.fit(x, y, nb_epoch=50, batch_size=30)
         return
 
     def __features_extracter(self):
@@ -71,7 +71,7 @@ class Infer(object):
         ## -----*----- 学習済みモデルの読み込み -----*-----##
         # モデルが存在する場合，読み込む
         if os.path.exists(path):
-            self.model.load_model(path)
+            self.__model.load_model(path)
 
 
 if __name__ == '__main__':
