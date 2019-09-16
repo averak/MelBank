@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2d68238-6971-45d6-9a40-47ade6222eeb" name="Default Changelist" comment="ls">
-      <change beforePath="$PROJECT_DIR$/.idea/StickySelectionHighlights.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/StickySelectionHighlights.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/nomalize.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/nomalize.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/nomalize.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+            <state relative-caret-position="78">
+              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
               <folding>
                 <element signature="e#23#41#0" expanded="true" />
               </folding>
@@ -174,12 +174,12 @@
       <workItem from="1567816087115" duration="3535000" />
       <workItem from="1568183800014" duration="10160000" />
       <workItem from="1568463792725" duration="551000" />
-      <workItem from="1568464364728" duration="18349000" />
+      <workItem from="1568464364728" duration="18380000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36669000" />
+    <option name="totallyTimeSpent" value="36700000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="0" width="1920" height="1080" extended-state="0" />
@@ -484,8 +484,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/nomalize.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        <state relative-caret-position="78">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
           <folding>
             <element signature="e#23#41#0" expanded="true" />
           </folding>

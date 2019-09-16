@@ -4,7 +4,7 @@ import scipy.io.wavfile as wf
 from scipy import signal
 
 
-def min_max(x, axis=None):
+def nomalize(x, axis=None):
     min = x.min(axis=axis, keepdims=True)
     max = x.max(axis=axis, keepdims=True)
     result = (x - min) / (max - min)
