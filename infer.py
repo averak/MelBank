@@ -45,20 +45,29 @@ class Infer(object):
         ## -----*----- 特徴量を抽出 -----*----- ##
         x = []
         y = []
-        speakers = []
+        spec = []
 
-        # ===== 音声一覧を格納 ===============
+        # ===== スペクトログラム一覧を格納 ===============
         for speaker in glob.glob('./tmp/teach/*'):
-            speakers.append({})
-            speakers[-1]['name'] = speaker.split('/')[-1]
-            speakers[-1]['stft'] = []
+            files = glob.glob('./tmp/teach/{0}/*.wav'.format(speaker.split('/')[-1]))
+            # 話者インデックス
+            spec.append([])
 
-            files = glob.glob('./tmp/teach/{0}/*.wav'.format(speakers[-1]['name']))
             for f in files:
-                speakers[-1]['stft'].append(self.__stft(file=f))
+                # スペクトログラム
+                spec[-1].append(self.__stft(file=f))
 
-        for speaker in speakers:
-            print(speaker['stft'][-1].shape)
+        # 教師データ数
+        num = min([len(arr) for arr in spec])
+
+        for i in range(num):
+            x.append(None)
+            for speaker in spec:
+                if x[-1] is None:
+                    x[-1] = speaker[i]
+                else:
+                    x[-1] += speaker[i]
+
             return
 
         return x, y
