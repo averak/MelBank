@@ -11,7 +11,8 @@ def stft(wav, to_log=True):
     return spec
 
 
-wav = wf.read('./lib/assets/format.wav')[1]
+wav_format = wf.read('./lib/assets/format.wav')[1]
 wav = wf.read('./tmp/source.wav')[1]
 spec = stft(wav)
-print(wav.shape)
+print(wav_format)
+print(wav)
