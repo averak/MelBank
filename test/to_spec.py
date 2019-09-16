@@ -12,7 +12,7 @@ def stft(wav, to_log=True):
 
 
 wav_format = wf.read('./lib/assets/format.wav')[1]
-wav = wf.read('./tmp/source.wav')[1]
+rate, wav = wf.read('./tmp/source.wav')
 spec = stft(wav)
 print(wav_format)
 print(wav)
