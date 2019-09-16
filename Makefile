@@ -9,5 +9,5 @@ record.once: ./lib/scripts/recording.py
 	@python ./lib/scripts/recording.py
 
 # 教師データの作成
-teach.make:
+teach.make: ./make_teacher.py
 	@python ./make_teacher.py
