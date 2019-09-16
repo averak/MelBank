@@ -9,7 +9,7 @@ class Recording(object):
         self._pa = pyaudio.PyAudio()
         # 音声入力の設定
         self.settings = {
-            'format': pyaudio.paInt16,
+            'format': pyaudio.paInt8, # 8量子化ビットサイズ
             'channels': 1,
             'rate': 8000,
             'chunk': 1024,
