@@ -15,3 +15,7 @@ teach.record: ./make_teacher.py
 # 教師データを作成
 teach.build: ./lib/scripts/shift.py
 	@python ./lib/scripts/shift.py
+
+# 学習
+teach.build: .train.py
+	@python .train.py
