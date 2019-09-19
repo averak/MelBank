@@ -30,21 +30,24 @@ class Infer(object):
     def __build(self):
         ## -----*----- NNを構築 -----*-----##
         model = Sequential()
-        model.add(LSTM(units=128, input_shape=(129, 33)))
+        # model.add(LSTM(units=128, input_shape=(129, 33)))
+        model.add(LSTM(units=128, input_shape=(129 * 33, 1)))
         model.add(Dropout(0.3))
-        model.add(Dense(129, activation='relu'))
+        model.add(Dense(128, activation='relu'))
         model.add(Dropout(0.3))
-        model.add(Dense(129 * 33, activation='softmax'))
+        model.add(Dense(128, activation='relu'))
+        model.add(Dropout(0.3))
+        model.add(Dense(129 * 33, activation='sigmoid'))
         # コンパイル
         model.compile(optimizer='rmsprop',
-                      loss='categorical_crossentropy',
+                      loss='binary_crossentropy',
                       metrics=['accuracy'])
 
         return model
 
-    def train(self, x, y):
+    def __train(self, x, y):
         ## -----*----- 学習 -----*-----##
-        self.__model.fit(x, y, epochs=50, batch_size=30)
+        self.__model.fit(x, y, epochs=20, batch_size=30)
         # 学習モデルを保存
         self.__model.save_weights(self.model_path)
 
@@ -84,6 +87,8 @@ class Infer(object):
                             max['index'] = speaker
                             max['value'] = spec[speaker][i][j][k]
                     y[i][j][k] = max['index']
+
+            x[i] = np.array(x[i]).flatten().reshape((129 * 33, 1))
             y[i] = np.array(y[i]).flatten()
 
         x = np.array(x)
@@ -127,7 +132,6 @@ class Infer(object):
         ## -----*----- 音源分離 -----*-----##
         spec = self.__stft(file=file, to_log=False)
         pred = self.predict(spec)
-
 
         for i in range(129):
             for j in range(33):
