@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-from tensorflow.keras.layers import Input
-from tensorflow.keras.layers import Flatten
 from tensorflow.keras.layers import Dense
 from tensorflow.keras.layers import LSTM
 from tensorflow.keras.layers import Dropout
@@ -12,33 +10,31 @@ import glob, os
 
 
 class Infer(object):
-    def __init__(self):
+    def __init__(self, train=False):
         ## -----*----- コンストラクタ -----*-----##
         # サンプリングレート
         self.rate = wf.read('./config/format.wav')[0]
-        self.speakers = 2
+        self.model_path = './model/model.hdf5'
 
         # モデルのビルド
         self.__model = self.__build()
 
         x, y = self.__features_extracter()
 
-        self.__train(x, y)
-
+        if train:
+            self.__train(x, y)
 
         # モデルの読み込み
-        self.load_model('./model/model.hdf5')
+        self.load_model(self.model_path)
 
     def __build(self):
         ## -----*----- NNを構築 -----*-----##
         model = Sequential()
-        #model.add(Input(shape=(129, 33)))
-        #model.add(Flatten())
         model.add(LSTM(units=128, input_shape=(129, 33)))
         model.add(Dropout(0.3))
         model.add(Dense(129, activation='relu'))
         model.add(Dropout(0.3))
-        model.add(Dense(129, activation='softmax'))
+        model.add(Dense(129 * 33, activation='softmax'))
         # コンパイル
         model.compile(optimizer='rmsprop',
                       loss='categorical_crossentropy',
@@ -46,10 +42,11 @@ class Infer(object):
 
         return model
 
-    def __train(self, x, y):
+    def train(self, x, y):
         ## -----*----- 学習 -----*-----##
         self.__model.fit(x, y, epochs=50, batch_size=30)
-        return
+        # 学習モデルを保存
+        self.__model.save_weights(self.model_path)
 
     def __features_extracter(self):
         ## -----*----- 特徴量を抽出 -----*----- ##
@@ -77,19 +74,20 @@ class Infer(object):
                     x[i] = speaker[i]
                 else:
                     x[i] += speaker[i]
-            x[i] = np.array([self.nomalize(x[i])])
 
-            y.append(np.arange(x[i].shape[1]*x[i].shape[2]).reshape(x[i].shape[1], x[i].shape[2]))
-            for j in range(x[i].shape[1]):
-                for k in range(x[i].shape[2]):
+            y.append(np.arange(x[i].shape[0] * x[i].shape[1]).reshape(x[i].shape[0], x[i].shape[1]))
+            for j in range(x[i].shape[0]):
+                for k in range(x[i].shape[1]):
                     max = {'index': 0, 'value': 0.0}
                     for speaker in range(len(spec)):
                         if spec[speaker][i][j][k] >= max['value']:
                             max['index'] = speaker
                             max['value'] = spec[speaker][i][j][k]
                     y[i][j][k] = max['index']
-            y[i] = np.array([y[i]])
+            y[i] = np.array(y[i]).flatten()
 
+        x = np.array(x)
+        y = np.array(y)
         return x, y
 
     def __stft(self, wav=None, file=None, to_log=True):
@@ -119,8 +117,28 @@ class Infer(object):
         ## -----*----- 学習済みモデルの読み込み -----*-----##
         # モデルが存在する場合，読み込む
         if os.path.exists(path):
-            self.__model.load_model(path)
+            self.__model.load_weights(path)
+
+    def predict(self, spec):
+        ## -----*----- 推論 -----*-----##
+        return self.__model.predict(np.array([spec]))[0].reshape((129, 33))
+
+    def separate(self, file):
+        ## -----*----- 音源分離 -----*-----##
+        spec = self.__stft(file=file, to_log=False)
+        pred = self.predict(spec)
+
+
+        for i in range(129):
+            for j in range(33):
+                if float(pred[i][j]) > 0.001:
+                    print(100)
+                    spec[i][j] = 0
+
+        wav = self.__istft(spec)
+        wf.write('./tmp/separate.wav', 8000, wav)
 
 
 if __name__ == '__main__':
     infer = Infer()
+    infer.separate('./tmp/mixed.wav')
