@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2d68238-6971-45d6-9a40-47ade6222eeb" name="Default Changelist" comment="ls">
-      <change beforePath="$PROJECT_DIR$/.idea/StickySelectionHighlights.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/StickySelectionHighlights.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flatten.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infer.py" beforeDir="false" afterPath="$PROJECT_DIR$/infer.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,32 +23,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/infer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-256">
-              <caret line="26" selection-end-line="126" />
+            <state>
+              <caret selection-end-column="23" />
               <folding>
-                <element signature="e#24#65#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flatten.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="548">
-              <caret line="134" selection-start-line="134" selection-end-line="134" />
-              <folding>
-                <element signature="e#24#65#0" expanded="true" />
+                <element signature="e#25#66#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/train.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/mixed.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="91">
+              <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="40" />
               <folding>
                 <element signature="e#23#52#0" expanded="true" />
               </folding>
@@ -129,11 +127,12 @@
         <option value="$PROJECT_DIR$/lib/scripts/shift.py" />
         <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/../Sound_Source_Separation/infer.py" />
-        <option value="$PROJECT_DIR$/infer.py" />
         <option value="$PROJECT_DIR$/../Speech_Recognitionのコピー/recognizer.py" />
         <option value="$PROJECT_DIR$/../Speech_Recognition/detection.py" />
         <option value="$PROJECT_DIR$/flatten.py" />
         <option value="$PROJECT_DIR$/test/mixed.py" />
+        <option value="$PROJECT_DIR$/infer.py" />
+        <option value="$PROJECT_DIR$/train.py" />
       </list>
     </option>
   </component>
@@ -227,12 +226,12 @@
       <workItem from="1568183800014" duration="10160000" />
       <workItem from="1568463792725" duration="551000" />
       <workItem from="1568464364728" duration="28354000" />
-      <workItem from="1568870141702" duration="1033000" />
+      <workItem from="1568870141702" duration="2030000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47707000" />
+    <option name="totallyTimeSpent" value="48704000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -554,16 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/infer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-256">
-          <caret line="26" selection-end-line="126" />
-          <folding>
-            <element signature="e#24#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Sound_Source_Separation/unet.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2">
@@ -583,8 +572,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flatten.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="134" selection-start-line="134" selection-end-line="134" />
+        <state relative-caret-position="492">
+          <caret line="129" lean-forward="true" selection-end-line="134" />
           <folding>
             <element signature="e#24#65#0" expanded="true" />
           </folding>
@@ -593,11 +582,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/mixed.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="91">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="40" />
           <folding>
             <element signature="e#23#52#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="23" />
+          <folding>
+            <element signature="e#25#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
         </state>
       </provider>
     </entry>
