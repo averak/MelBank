@@ -126,6 +126,7 @@ class Infer(object):
 
     def predict(self, spec):
         ## -----*----- 推論 -----*-----##
+        spec = spec.flatten().reshape((129 * 33, 1))
         return self.__model.predict(np.array([spec]))[0].reshape((129, 33))
 
     def separate(self, file):
@@ -135,8 +136,7 @@ class Infer(object):
 
         for i in range(129):
             for j in range(33):
-                if float(pred[i][j]) > 0.001:
-                    print(100)
+                if pred[i][j] > 0.42:
                     spec[i][j] = 0
 
         wav = self.__istft(spec)
@@ -146,3 +146,5 @@ class Infer(object):
 if __name__ == '__main__':
     infer = Infer()
     infer.separate('./tmp/mixed.wav')
+    #infer.separate(glob.glob('./tmp/teach/800Hz/*.wav')[0])
+    #infer.separate(glob.glob('./tmp/teach/あー/*.wav')[0])
