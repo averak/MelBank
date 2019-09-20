@@ -13,6 +13,26 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../InputKey/README.md">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../InputKey/loop.py">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../KeyInput/.git/config">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../KeyInput/loop.py">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/GNUmakefile">
           <value>
             <PaintGroupHighlightMap />
@@ -149,6 +169,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/test_infer.py">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/test_make.py">
           <value>
             <PaintGroupHighlightMap />
           </value>
