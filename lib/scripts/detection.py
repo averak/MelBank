@@ -73,11 +73,12 @@ class Detection(Recording):
         if self.up_edge() and self.record_end.is_set():
             self.record_start.set()
             self.record_end.clear()
-            self.color = 32
             self.state['border'] = self.state['average']
+            self.color = 32
         if self.down_edge() and (not self.record_end.is_set()):
             self.record_start.clear()
             self.reset_state()
+            self.color = 90
 
     def up_edge(self):
         ## -----*----- 立ち上がり検出 -----*----- ##
@@ -104,7 +105,6 @@ class Detection(Recording):
         self.state['cnt'] = 15
         if self.state['average'] >= self.state['amp']:
             self.cnt_edge['up'] = 0
-        self.color = 90
         self.pastTime = time.time()
 
     def update_border(self):
