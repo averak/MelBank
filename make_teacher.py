@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 from lib.scripts.recording import Recording
-import time
-import os
+import time, os, threading
+import glob
 
 # ===== 新規話者の登録 ===============
+
 dir = './tmp/recorded'
 
 # 標準入力で話者名を指定
@@ -14,15 +15,24 @@ os.makedirs('{0}/{1}'.format(dir, name), exist_ok=True)
 
 record = Recording()
 os.system('clear')
+print('*** ENTERを押して録音開始・終了 ***')
 
-for i in range(10):
-    time.sleep(2)
-    record.file = '{0}/{1}/{2}.wav'.format(dir, name, i + 1)
-    print("===== {0} START ===============".format(i + 1))
-    time.sleep(0.5)
-    record.record_start.set()
-    time.sleep(1.0)
-    record.record_start.clear()
-    print("===== END ===============\n")
+mode = 0  # 0：録音開始，1：録音終了
+cnt = len(glob.glob('{0}/{1}/*.wav'.format(dir, name))) + 1
 
-record.is_exit = True
+while True:
+    key = input()
+
+    if mode == 0:
+        # 録音開始
+        print("===== {0} START ===============".format(cnt))
+        record.file = '{0}/{1}/{2}.wav'.format(dir, name, cnt)
+        record.record_start.set()
+        mode = 1
+
+    else:
+        # 録音終了
+        print("===== END ===============")
+        record.record_start.clear()
+        mode = 0
+        cnt += 1
