@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2d68238-6971-45d6-9a40-47ade6222eeb" name="Default Changelist" comment="ls">
-      <change beforePath="$PROJECT_DIR$/.idea/StickySelectionHighlights.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/StickySelectionHighlights.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infer.py" beforeDir="false" afterPath="$PROJECT_DIR$/infer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/scripts/detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/scripts/detection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/to_spec.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/to_spec.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recognizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/recognizer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/separate.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/separate.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/source.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/source.wav" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,20 +19,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/infer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="587">
-              <caret line="156" selection-start-line="156" selection-end-line="156" />
+            <state relative-caret-position="272">
+              <caret line="95" selection-start-line="95" selection-end-line="95" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/recognizer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1625">
-              <caret line="132" column="28" lean-forward="true" selection-end-line="156" />
+            <state relative-caret-position="433">
+              <caret line="135" column="28" selection-start-line="135" selection-start-column="28" selection-end-line="135" selection-end-column="28" />
+              <folding>
+                <element signature="e#3443#3690#0" />
+                <element signature="e#3742#3930#0" />
+                <element signature="e#3978#4170#0" />
+                <element signature="e#4212#4356#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -143,8 +145,8 @@
         <option value="$PROJECT_DIR$/infer_wava.py" />
         <option value="$PROJECT_DIR$/lib/scripts/detection.py" />
         <option value="$PROJECT_DIR$/test/to_spec.py" />
-        <option value="$PROJECT_DIR$/recognizer.py" />
         <option value="$PROJECT_DIR$/infer.py" />
+        <option value="$PROJECT_DIR$/recognizer.py" />
       </list>
     </option>
   </component>
@@ -220,12 +222,12 @@
       <workItem from="1568183800014" duration="10160000" />
       <workItem from="1568463792725" duration="551000" />
       <workItem from="1568464364728" duration="28354000" />
-      <workItem from="1568870141702" duration="9068000" />
+      <workItem from="1568870141702" duration="10378000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55742000" />
+    <option name="totallyTimeSpent" value="57052000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
@@ -607,22 +609,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/infer_wava.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
+        <state relative-caret-position="-291">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recognizer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1625">
-          <caret line="132" column="28" lean-forward="true" selection-end-line="156" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/infer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="156" selection-start-line="156" selection-end-line="156" />
+        <state relative-caret-position="272">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recognizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="135" column="28" selection-start-line="135" selection-start-column="28" selection-end-line="135" selection-end-column="28" />
+          <folding>
+            <element signature="e#3443#3690#0" />
+            <element signature="e#3742#3930#0" />
+            <element signature="e#3978#4170#0" />
+            <element signature="e#4212#4356#0" />
+          </folding>
         </state>
       </provider>
     </entry>

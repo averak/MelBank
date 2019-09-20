@@ -14,7 +14,7 @@ class Recognizer(object):
         ## -----*----- コンストラクタ -----*-----##
         # ファイルパス
         self.format_path = './config/format.wav'
-        self.model_path = './model/model.hdf5'
+        self.model_path = './model/model_freq.hdf5'
         self.output_path = './tmp/separate.wav'
 
         # サンプリングレート
@@ -36,14 +36,13 @@ class Recognizer(object):
     def __build(self):
         ## -----*----- NNを構築 -----*-----##
         model = Sequential()
-        # model.add(LSTM(units=128, input_shape=(self.size[0], self.size[1])))
-        model.add(LSTM(units=128, input_shape=(self.size[0] * self.size[1], 1)))
+        model.add(LSTM(units=128, input_shape=(self.size[0], 1)))
         model.add(Dropout(0.3))
         model.add(Dense(128, activation='relu'))
         model.add(Dropout(0.3))
         model.add(Dense(128, activation='relu'))
         model.add(Dropout(0.3))
-        model.add(Dense(self.size[0] * self.size[1], activation='sigmoid'))
+        model.add(Dense(self.size[0], activation='sigmoid'))
         # コンパイル
         model.compile(optimizer='rmsprop',
                       loss='binary_crossentropy',
@@ -71,33 +70,23 @@ class Recognizer(object):
 
             for f in files:
                 # スペクトログラム
-                spec[-1].append(self.__stft(file=f))
+                spec[-1].append(self.__stft(file=f).T)
 
         # 教師データ数
         num = min([len(arr) for arr in spec])
 
         for i in range(num):
-            x.append(None)
-            for speaker in spec:
-                if x[i] is None:
-                    x[i] = speaker[i]
-                else:
-                    x[i] += speaker[i]
+            for t in range(self.size[1]):
+                # 時間毎に区切る
+                x.append(spec[0][i][t] + spec[1][i][t])
 
-            y.append(np.arange(x[i].shape[0] * x[i].shape[1]).reshape(x[i].shape[0], x[i].shape[1]))
-            for j in range(x[i].shape[0]):
-                for k in range(x[i].shape[1]):
-                    max = {'index': 0, 'value': 0.0}
-                    for speaker in range(len(spec)):
-                        if spec[speaker][i][j][k] >= max['value']:
-                            max['index'] = speaker
-                            max['value'] = spec[speaker][i][j][k]
-                    y[i][j][k] = max['index']
+                # 周波数成分を話者に分類
+                y.append(np.zeros(self.size[0]))
+                for j in range(self.size[0]):
+                    if spec[0][i][t][j] > spec[1][i][t][j]:
+                        y[-1][j] = 1
 
-            x[i] = np.array(x[i]).flatten().reshape((self.size[0] * self.size[1], 1))
-            y[i] = np.array(y[i]).flatten()
-
-        x = np.array(x)
+        x = np.array(x).reshape((len(x), self.size[0], 1))
         y = np.array(y)
         return x, y
 
@@ -130,27 +119,29 @@ class Recognizer(object):
         if os.path.exists(path):
             self.__model.load_weights(path)
 
-    def predict(self, spec):
+    def predict(self, data):
         ## -----*----- 推論 -----*-----##
-        spec = spec.flatten().reshape((self.size[0] * self.size[1], 1))
-        return self.__model.predict(np.array([spec]))[0].reshape((self.size[0], self.size[1]))
+        data = np.reshape(data, (self.size[0], 1))
+        return self.__model.predict(np.array([data]))[0]
 
     def separate(self, file):
         ## -----*----- 音源分離 -----*-----##
-        spec = self.__stft(file=file, to_log=False)
-        pred = self.predict(spec)
+        spec = self.__stft(file=file, to_log=False).T
+        for t in range(self.size[1]):
+            # 推論
+            pred = self.predict(spec[t])
 
-        for i in range(self.size[0]):
-            for j in range(self.size[1]):
-                if pred[i][j] > 0.42:
-                    spec[i][j] = 0
+            # クラスタリング
+            for i in range(self.size[0]):
+                if pred[i] < 0.42:
+                    spec[t][i] = 0
 
-        wav = self.__istft(spec)
+        wav = self.__istft(spec.T)
         wf.write(self.output_path, self.rate, wav)
 
 
 if __name__ == '__main__':
-    infer = Recognizer(True)
-    #infer.separate('./tmp/mixed.wav')
+    infer = Recognizer()
+    infer.separate('./tmp/mixed.wav')
     #infer.separate(glob.glob('./tmp/teach/800Hz/*.wav')[0])
     #infer.separate(glob.glob('./tmp/teach/あー/*.wav')[0])
