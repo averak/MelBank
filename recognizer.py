@@ -143,5 +143,3 @@ class Recognizer(object):
 if __name__ == '__main__':
     infer = Recognizer()
     infer.separate('./tmp/mixed.wav')
-    #infer.separate(glob.glob('./tmp/teach/800Hz/*.wav')[0])
-    #infer.separate(glob.glob('./tmp/teach/あー/*.wav')[0])
