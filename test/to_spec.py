@@ -5,7 +5,7 @@ from scipy import signal
 
 def stft(wav, to_log=True):
     ## -----*----- STFT -----*----- ##
-    _, _, spec = signal.stft(wav, fs=8000, nperseg=255)
+    _, _, spec = signal.stft(wav, fs=8000, nperseg=256)
     if to_log:
         spec = 10 * np.log(np.abs(spec))
     return spec
@@ -13,6 +13,7 @@ def stft(wav, to_log=True):
 
 wav_format = wf.read('./config/format.wav')[1]
 rate, wav = wf.read('./tmp/source.wav')
+spec_format = stft(wav_format)
 spec = stft(wav)
-print(wav_format)
-print(wav)
+print(spec_format.shape)
+print(spec.shape)
