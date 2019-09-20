@@ -131,9 +131,9 @@ class Recognizer(object):
             # 推論
             pred = self.predict(spec[t])
 
-            # クラスタリング
+            # 分類
             for i in range(self.size[0]):
-                if pred[i] < 0.42:
+                if pred[i] < 0.5:
                     spec[t][i] = 0
 
         wav = self.__istft(spec.T)

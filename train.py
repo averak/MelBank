@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from infer import Infer
+from recognizer import Recognizer
 
 if __name__ == '__main__':
-    Infer(True)
+    Recognizer(True)
