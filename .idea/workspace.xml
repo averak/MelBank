@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e2d68238-6971-45d6-9a40-47ade6222eeb" name="Default Changelist" comment="ls">
       <change beforePath="$PROJECT_DIR$/.idea/StickySelectionHighlights.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/StickySelectionHighlights.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recognizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/recognizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/make_teacher.py" beforeDir="false" afterPath="$PROJECT_DIR$/make_teacher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_make.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_make.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/source.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/source.wav" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_make.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="34" column="70" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
+            <state relative-caret-position="172">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="e#24#67#0" expanded="true" />
               </folding>
@@ -34,22 +34,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/scripts/recording.py">
+        <entry file="file://$PROJECT_DIR$/enter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
+            <state relative-caret-position="494">
+              <caret line="38" lean-forward="true" selection-end-line="38" />
               <folding>
-                <element signature="e#24#44#0" expanded="true" />
+                <element signature="e#24#67#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/make_teacher.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="494">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="e#24#67#0" expanded="true" />
               </folding>
@@ -80,6 +80,7 @@
       <find>record_start</find>
       <find>getch</find>
       <find>file</find>
+      <find>record_end</find>
     </findStrings>
     <replaceStrings>
       <replace>self.__model</replace>
@@ -110,12 +111,10 @@
         <option value="$USER_HOME$/立命館/英語入門091/src/delay.rb" />
         <option value="$USER_HOME$/立命館/英語入門091/src/fetch.rb" />
         <option value="$PROJECT_DIR$/lib/requirements.txt" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/test/plot_spec.py" />
         <option value="$USER_HOME$/.zshrc" />
         <option value="$PROJECT_DIR$/../Sound_Source_Separation/make_teacher.py" />
         <option value="$PROJECT_DIR$/test/nomalize.py" />
-        <option value="$PROJECT_DIR$/make_teacher.py" />
         <option value="$PROJECT_DIR$/lib/scripts/shift.py" />
         <option value="$PROJECT_DIR$/../Sound_Source_Separation/infer.py" />
         <option value="$PROJECT_DIR$/../Speech_Recognitionのコピー/recognizer.py" />
@@ -135,8 +134,11 @@
         <option value="$PROJECT_DIR$/../InputKey/loop.py" />
         <option value="$PROJECT_DIR$/../KeyInput/.git/config" />
         <option value="$PROJECT_DIR$/../KeyInput/loop.py" />
-        <option value="$PROJECT_DIR$/lib/scripts/recording.py" />
         <option value="$PROJECT_DIR$/test_make.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/lib/scripts/recording.py" />
+        <option value="$PROJECT_DIR$/enter.py" />
+        <option value="$PROJECT_DIR$/make_teacher.py" />
       </list>
     </option>
   </component>
@@ -221,12 +223,12 @@
       <workItem from="1568464364728" duration="28354000" />
       <workItem from="1568870141702" duration="14755000" />
       <workItem from="1568969324514" duration="1885000" />
-      <workItem from="1568971365884" duration="140000" />
+      <workItem from="1568971365884" duration="752000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63454000" />
+    <option name="totallyTimeSpent" value="64066000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="0" width="1920" height="1080" extended-state="0" />
@@ -306,7 +308,6 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="requirements.txt" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/recording.py" />
     <entry file="file://$PROJECT_DIR$/lib/test.py" />
     <entry file="file://$PROJECT_DIR$/detection.py" />
     <entry file="file://$PROJECT_DIR$/Pakefile.py" />
@@ -369,7 +370,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$USER_HOME$/.zshrc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
@@ -478,16 +478,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/scripts/detection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
-          <folding>
-            <element signature="e#24#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/infer_wava.py" />
     <entry file="file://$PROJECT_DIR$/infer.py" />
     <entry file="file://$PROJECT_DIR$/Makefile">
@@ -557,20 +547,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/make_teacher.py">
+    <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="260">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="e#24#67#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/scripts/detection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
+          <folding>
+            <element signature="e#24#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/scripts/recording.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
+        <state relative-caret-position="258">
+          <caret line="83" column="25" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
           <folding>
             <element signature="e#24#44#0" expanded="true" />
           </folding>
@@ -579,8 +579,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_make.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="34" column="70" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
+        <state relative-caret-position="172">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#24#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="38" lean-forward="true" selection-end-line="38" />
+          <folding>
+            <element signature="e#24#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/make_teacher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="e#24#67#0" expanded="true" />
           </folding>
