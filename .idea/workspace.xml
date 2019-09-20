@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2d68238-6971-45d6-9a40-47ade6222eeb" name="Default Changelist" comment="ls">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infer.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/recognizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/recognizer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/separate.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/separate.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,20 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/infer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="95" selection-start-line="95" selection-end-line="95" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/recognizer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="135" column="28" selection-start-line="135" selection-start-column="28" selection-end-line="135" selection-end-column="28" />
+            <state relative-caret-position="522">
+              <caret line="146" column="5" lean-forward="true" selection-start-line="146" selection-start-column="5" selection-end-line="146" selection-end-column="5" />
               <folding>
                 <element signature="e#3443#3690#0" />
                 <element signature="e#3742#3930#0" />
@@ -51,6 +45,15 @@
               <folding>
                 <element signature="e#23#52#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -137,7 +140,6 @@
         <option value="$PROJECT_DIR$/../Speech_Recognitionのコピー/recognizer.py" />
         <option value="$PROJECT_DIR$/../Speech_Recognition/detection.py" />
         <option value="$PROJECT_DIR$/flatten.py" />
-        <option value="$PROJECT_DIR$/train.py" />
         <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/test/plot_wav.py" />
         <option value="$PROJECT_DIR$/test/mixed.py" />
@@ -146,6 +148,7 @@
         <option value="$PROJECT_DIR$/lib/scripts/detection.py" />
         <option value="$PROJECT_DIR$/test/to_spec.py" />
         <option value="$PROJECT_DIR$/infer.py" />
+        <option value="$PROJECT_DIR$/train.py" />
         <option value="$PROJECT_DIR$/recognizer.py" />
       </list>
     </option>
@@ -222,12 +225,12 @@
       <workItem from="1568183800014" duration="10160000" />
       <workItem from="1568463792725" duration="551000" />
       <workItem from="1568464364728" duration="28354000" />
-      <workItem from="1568870141702" duration="10378000" />
+      <workItem from="1568870141702" duration="10702000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57052000" />
+    <option name="totallyTimeSpent" value="57376000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
@@ -532,27 +535,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="65">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/mixed.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#23#52#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -621,10 +607,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/mixed.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#23#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/recognizer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="135" column="28" selection-start-line="135" selection-start-column="28" selection-end-line="135" selection-end-column="28" />
+        <state relative-caret-position="522">
+          <caret line="146" column="5" lean-forward="true" selection-start-line="146" selection-start-column="5" selection-end-line="146" selection-end-column="5" />
           <folding>
             <element signature="e#3443#3690#0" />
             <element signature="e#3742#3930#0" />
