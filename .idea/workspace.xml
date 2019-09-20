@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2d68238-6971-45d6-9a40-47ade6222eeb" name="Default Changelist" comment="ls">
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infer_wava.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/model.hdf5" beforeDir="false" afterPath="$PROJECT_DIR$/model/model.hdf5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/model_wave.hdf5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recognizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/recognizer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/separate.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/separate.wav" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,13 +22,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/recognizer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="135" column="37" selection-start-line="135" selection-start-column="37" selection-end-line="135" selection-end-column="37" />
+            <state relative-caret-position="-390">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
               <folding>
+                <element signature="e#354#860#0" />
+                <element signature="e#879#1547#0" />
+                <element signature="e#1586#1744#0" />
                 <element signature="e#3443#3690#0" />
                 <element signature="e#3742#3930#0" />
                 <element signature="e#3978#4170#0" />
                 <element signature="e#4212#4356#0" />
+                <element signature="e#3791#3969#0" />
               </folding>
             </state>
           </provider>
@@ -193,12 +193,12 @@
       <workItem from="1568183800014" duration="10160000" />
       <workItem from="1568463792725" duration="551000" />
       <workItem from="1568464364728" duration="28354000" />
-      <workItem from="1568870141702" duration="11395000" />
+      <workItem from="1568870141702" duration="12269000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58069000" />
+    <option name="totallyTimeSpent" value="58943000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
@@ -594,13 +594,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/recognizer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="135" column="37" selection-start-line="135" selection-start-column="37" selection-end-line="135" selection-end-column="37" />
+        <state relative-caret-position="-390">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
+            <element signature="e#354#860#0" />
+            <element signature="e#879#1547#0" />
+            <element signature="e#1586#1744#0" />
             <element signature="e#3443#3690#0" />
             <element signature="e#3742#3930#0" />
             <element signature="e#3978#4170#0" />
             <element signature="e#4212#4356#0" />
+            <element signature="e#3791#3969#0" />
           </folding>
         </state>
       </provider>
