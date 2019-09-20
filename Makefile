@@ -17,5 +17,5 @@ teach.build: ./lib/scripts/shift.py
 	@python ./lib/scripts/shift.py
 
 # 学習
-train: .train.py
-	@python .train.py
+train: ./train.py
+	@python ./train.py

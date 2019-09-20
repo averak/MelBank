@@ -14,7 +14,7 @@ class Recognizer(object):
         ## -----*----- コンストラクタ -----*-----##
         # ファイルパス
         self.format_path = './config/format.wav'
-        self.model_path = './model/model_freq.hdf5'
+        self.model_path = './model/model.hdf5'
         self.output_path = './tmp/separate.wav'
 
         # サンプリングレート
@@ -133,8 +133,7 @@ class Recognizer(object):
 
             # 分類
             for i in range(self.size[0]):
-                if pred[i] < 0.5:
-                    spec[t][i] = 0
+                spec[t][i] *= pred[i]
 
         wav = self.__istft(spec.T)
         wf.write(self.output_path, self.rate, wav)
