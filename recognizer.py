@@ -52,7 +52,7 @@ class Recognizer(object):
 
     def __train(self, x, y):
         ## -----*----- 学習 -----*-----##
-        self.__model.fit(x, y, epochs=20, batch_size=30)
+        self.__model.fit(x, y, epochs=20, batch_size=100)
         # 学習モデルを保存
         self.__model.save_weights(self.model_path)
 
@@ -78,13 +78,14 @@ class Recognizer(object):
         for i in range(num):
             for t in range(self.size[1]):
                 # 時間毎に区切る
-                x.append(spec[0][i%len(spec[0])][t] + spec[1][i%len(spec[1])][t])
+                sum = spec[0][i % len(spec[0])][t] + spec[1][i % len(spec[1])][t]
+                x.append(self.nomalize(sum))
 
                 # 周波数成分を話者に分類
                 y.append(np.zeros(self.size[0]))
                 for j in range(self.size[0]):
                     if spec[0][i%len(spec[0])][t][j] > spec[1][i%len(spec[1])][t][j]:
-                        y[-1][j] = 1
+                        y[-1][j] = 1.0
 
         x = np.array(x).reshape((len(x), self.size[0], 1))
         y = np.array(y)
@@ -122,6 +123,7 @@ class Recognizer(object):
     def predict(self, data):
         ## -----*----- 推論 -----*-----##
         data = np.reshape(data, (self.size[0], 1))
+        data = self.nomalize(data)
         return self.__model.predict(np.array([data]))[0]
 
     def separate(self, file):
@@ -142,5 +144,5 @@ class Recognizer(object):
 
 if __name__ == '__main__':
     infer = Recognizer()
-    #infer.separate('./tmp/mixed.wav')
+    # infer.separate('./tmp/mixed.wav')
     infer.separate('./tmp/source.wav')
