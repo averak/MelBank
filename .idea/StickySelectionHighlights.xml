@@ -173,6 +173,11 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/test/sum_rate.py">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/test/to_spec.py">
           <value>
             <PaintGroupHighlightMap />
