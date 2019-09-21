@@ -21,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/recognizer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="143" column="41" selection-start-line="143" selection-start-column="41" selection-end-line="143" selection-end-column="41" />
+            <state relative-caret-position="117">
+              <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
               <folding>
                 <element signature="e#3234#3422#0" />
               </folding>
@@ -217,12 +217,12 @@
       <workItem from="1568870141702" duration="14755000" />
       <workItem from="1568969324514" duration="1885000" />
       <workItem from="1568971365884" duration="1134000" />
-      <workItem from="1568972780344" duration="9517000" />
+      <workItem from="1568972780344" duration="9559000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73965000" />
+    <option name="totallyTimeSpent" value="74007000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
@@ -583,8 +583,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/recognizer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="143" column="41" selection-start-line="143" selection-start-column="41" selection-end-line="143" selection-end-column="41" />
+        <state relative-caret-position="117">
+          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
           <folding>
             <element signature="e#3234#3422#0" />
           </folding>
