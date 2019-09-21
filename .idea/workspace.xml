@@ -3,9 +3,232 @@
   <component name="ChangeListManager">
     <list default="true" id="e2d68238-6971-45d6-9a40-47ade6222eeb" name="Default Changelist" comment="ls">
       <change beforePath="$PROJECT_DIR$/.idea/StickySelectionHighlights.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/StickySelectionHighlights.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/make_teacher.py" beforeDir="false" afterPath="$PROJECT_DIR$/make_teacher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_make.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_make.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/source.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/source.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/model.hdf5" beforeDir="false" afterPath="$PROJECT_DIR$/model/model.hdf5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recognizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/recognizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/mixed.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/mixed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/mixed.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/mixed.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/recorded/あー/1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/recorded/あー/10.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/recorded/あー/2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/recorded/あー/3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/recorded/あー/4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/recorded/あー/5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/recorded/あー/6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/recorded/あー/7.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/recorded/あー/8.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/recorded/あー/9.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/separate.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/separate.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/106.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/107.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/108.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/109.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/110.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/111.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/112.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/113.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/114.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/115.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/116.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/117.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/118.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/119.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/120.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/121.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/122.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/123.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/124.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/125.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/126.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/127.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/128.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/129.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/130.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/131.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/132.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/133.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/134.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/135.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/136.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/137.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/138.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/139.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/140.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/141.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/142.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/143.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/144.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/145.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/146.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/147.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/148.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/149.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/150.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/151.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/152.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/153.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/154.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/155.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/156.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/157.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/158.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/159.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/160.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/161.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/162.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/163.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/164.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/165.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/166.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/167.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/168.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/169.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/170.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/171.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/172.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/173.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/174.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/175.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/176.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/177.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/178.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/179.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/180.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/181.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/182.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/183.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/184.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/185.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/186.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/187.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/188.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/189.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/190.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/191.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/192.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/193.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/194.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/195.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/196.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/197.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/198.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/199.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/200.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/201.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/202.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/203.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/204.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/205.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/206.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/207.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/208.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/800Hz/209.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/10.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/100.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/101.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/102.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/103.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/104.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/105.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/11.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/12.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/13.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/14.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/15.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/16.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/17.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/18.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/19.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/20.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/21.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/22.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/23.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/24.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/25.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/26.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/27.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/28.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/29.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/30.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/31.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/32.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/33.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/34.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/35.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/36.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/37.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/38.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/39.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/40.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/41.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/42.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/43.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/44.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/45.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/46.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/47.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/48.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/49.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/50.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/51.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/52.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/53.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/54.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/55.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/56.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/57.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/58.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/59.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/60.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/61.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/62.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/63.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/64.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/65.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/66.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/67.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/68.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/69.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/7.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/70.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/71.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/72.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/73.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/74.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/75.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/76.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/77.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/78.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/79.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/8.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/80.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/81.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/82.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/83.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/84.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/85.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/86.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/87.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/88.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/89.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/9.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/90.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/91.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/92.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/93.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/94.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/95.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/96.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/97.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/98.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/teach/あー/99.wav" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,37 +244,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_make.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="e#24#67#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/enter.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="38" lean-forward="true" selection-end-line="38" />
-              <folding>
-                <element signature="e#24#67#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/make_teacher.py">
+        <entry file="file://$PROJECT_DIR$/recognizer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="338">
+              <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/mixed.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="22" selection-start-column="22" selection-end-column="22" />
               <folding>
-                <element signature="e#24#67#0" expanded="true" />
+                <element signature="e#23#52#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,6 +289,8 @@
       <find>getch</find>
       <find>file</find>
       <find>record_end</find>
+      <find>i</find>
+      <find>\[i\]</find>
     </findStrings>
     <replaceStrings>
       <replace>self.__model</replace>
@@ -121,7 +331,6 @@
         <option value="$PROJECT_DIR$/../Speech_Recognition/detection.py" />
         <option value="$PROJECT_DIR$/flatten.py" />
         <option value="$PROJECT_DIR$/test/plot_wav.py" />
-        <option value="$PROJECT_DIR$/test/mixed.py" />
         <option value="$PROJECT_DIR$/test_infer.py" />
         <option value="$PROJECT_DIR$/infer_wava.py" />
         <option value="$PROJECT_DIR$/lib/scripts/detection.py" />
@@ -129,7 +338,6 @@
         <option value="$PROJECT_DIR$/infer.py" />
         <option value="$PROJECT_DIR$/train.py" />
         <option value="$PROJECT_DIR$/Makefile" />
-        <option value="$PROJECT_DIR$/recognizer.py" />
         <option value="$PROJECT_DIR$/../InputKey/README.md" />
         <option value="$PROJECT_DIR$/../InputKey/loop.py" />
         <option value="$PROJECT_DIR$/../KeyInput/.git/config" />
@@ -139,21 +347,23 @@
         <option value="$PROJECT_DIR$/lib/scripts/recording.py" />
         <option value="$PROJECT_DIR$/enter.py" />
         <option value="$PROJECT_DIR$/make_teacher.py" />
+        <option value="$PROJECT_DIR$/test/mix_two_speakers.py" />
+        <option value="$PROJECT_DIR$/test/mixed.py" />
+        <option value="$PROJECT_DIR$/recognizer.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="-1920" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -171,6 +381,11 @@
               <item name="MelBank" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MelBank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MelBank" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -223,19 +438,20 @@
       <workItem from="1568464364728" duration="28354000" />
       <workItem from="1568870141702" duration="14755000" />
       <workItem from="1568969324514" duration="1885000" />
-      <workItem from="1568971365884" duration="752000" />
+      <workItem from="1568971365884" duration="1134000" />
+      <workItem from="1568972780344" duration="5562000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64066000" />
+    <option name="totallyTimeSpent" value="70010000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4942857" visible="true" weight="0.23855165" />
-      <window_info id="Structure" order="1" sideWeight="0.5057143" side_tool="true" visible="true" weight="0.23855165" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49253732" visible="true" weight="0.2765568" />
+      <window_info id="Structure" order="1" sideWeight="0.5074627" side_tool="true" visible="true" weight="0.2765568" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -247,7 +463,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4993895" visible="true" weight="0.3069307" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4993895" visible="true" weight="0.31632653" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50061053" side_tool="true" weight="0.32857144" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
@@ -308,8 +524,6 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="requirements.txt" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/test.py" />
-    <entry file="file://$PROJECT_DIR$/detection.py" />
     <entry file="file://$PROJECT_DIR$/Pakefile.py" />
     <entry file="file://$PROJECT_DIR$/lib/scripts/console.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -425,13 +639,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/scripts/shift.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/東工大附属/課題研究/myProject/src/Recognition/Recognizer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -480,23 +687,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/infer_wava.py" />
     <entry file="file://$PROJECT_DIR$/infer.py" />
-    <entry file="file://$PROJECT_DIR$/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/mixed.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#23#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/to_spec.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -526,13 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/recognizer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1534">
-          <caret line="125" selection-start-line="125" selection-end-line="125" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/train.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
@@ -547,16 +730,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#24#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$PROJECT_DIR$/lib/scripts/detection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="453">
@@ -577,33 +751,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_make.py">
+    <entry file="file://$PROJECT_DIR$/test_make.py" />
+    <entry file="file://$PROJECT_DIR$/enter.py" />
+    <entry file="file://$PROJECT_DIR$/lib/scripts/shift.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#24#67#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="467">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/enter.py">
+    <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="38" lean-forward="true" selection-end-line="38" />
-          <folding>
-            <element signature="e#24#67#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="143">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/mix_two_speaker.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/mix_two_speakers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="139" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/make_teacher.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="403">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="e#24#67#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/mixed.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+          <folding>
+            <element signature="e#23#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recognizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
         </state>
       </provider>
     </entry>
