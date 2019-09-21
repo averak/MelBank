@@ -148,6 +148,11 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/test/mix_two_speakers.py">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/test/mixed.py">
           <value>
             <PaintGroupHighlightMap />

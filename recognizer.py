@@ -73,17 +73,17 @@ class Recognizer(object):
                 spec[-1].append(self.__stft(file=f).T)
 
         # 教師データ数
-        num = min([len(arr) for arr in spec])
+        num = max([len(arr) for arr in spec])
 
         for i in range(num):
             for t in range(self.size[1]):
                 # 時間毎に区切る
-                x.append(spec[0][i][t] + spec[1][i][t])
+                x.append(spec[0][i%len(spec[0])][t] + spec[1][i%len(spec[1])][t])
 
                 # 周波数成分を話者に分類
                 y.append(np.zeros(self.size[0]))
                 for j in range(self.size[0]):
-                    if spec[0][i][t][j] > spec[1][i][t][j]:
+                    if spec[0][i%len(spec[0])][t][j] > spec[1][i%len(spec[1])][t][j]:
                         y[-1][j] = 1
 
         x = np.array(x).reshape((len(x), self.size[0], 1))
@@ -142,4 +142,5 @@ class Recognizer(object):
 
 if __name__ == '__main__':
     infer = Recognizer()
-    infer.separate('./tmp/mixed.wav')
+    #infer.separate('./tmp/mixed.wav')
+    infer.separate('./tmp/source.wav')
