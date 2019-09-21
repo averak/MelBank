@@ -14,7 +14,7 @@ class Recognizer(object):
         ## -----*----- コンストラクタ -----*-----##
         # ファイルパス
         self.format_path = './config/format.wav'
-        self.model_path = './model/model.hdf5'
+        self.model_path = './model/model_test.hdf5'
         self.output_path = './tmp/separate.wav'
 
         # サンプリングレート
@@ -38,7 +38,9 @@ class Recognizer(object):
         model = Sequential()
         model.add(LSTM(units=128, input_shape=(self.size[0], 1)))
         model.add(Dropout(0.3))
-        model.add(Dense(128, activation='relu'))
+        model.add(Dense(256, activation='relu'))
+        model.add(Dropout(0.3))
+        model.add(Dense(256, activation='relu'))
         model.add(Dropout(0.3))
         model.add(Dense(128, activation='relu'))
         model.add(Dropout(0.3))
@@ -52,7 +54,7 @@ class Recognizer(object):
 
     def __train(self, x, y):
         ## -----*----- 学習 -----*-----##
-        self.__model.fit(x, y, epochs=20, batch_size=100)
+        self.__model.fit(x, y, epochs=4, batch_size=100)
         # 学習モデルを保存
         self.__model.save_weights(self.model_path)
 
@@ -72,7 +74,7 @@ class Recognizer(object):
                 # スペクトログラム
                 spec[-1].append(self.__stft(file=f).T)
 
-        # 教師データ数
+        # 教師データ数（多い方に合わせる）
         num = max([len(arr) for arr in spec])
 
         for i in range(num):
@@ -84,7 +86,8 @@ class Recognizer(object):
                 # 周波数成分を話者に分類
                 y.append(np.zeros(self.size[0]))
                 for j in range(self.size[0]):
-                    if spec[0][i%len(spec[0])][t][j] > spec[1][i%len(spec[1])][t][j]:
+                    #if spec[0][i%len(spec[0])][t][j] > spec[1][i%len(spec[1])][t][j]:
+                    if abs(spec[0][i%len(spec[0])][t][j]) > abs(spec[1][i%len(spec[1])][t][j]):
                         y[-1][j] = 1.0
 
         x = np.array(x).reshape((len(x), self.size[0], 1))
@@ -136,7 +139,11 @@ class Recognizer(object):
             pred = self.predict(spec[t])
             # 分類
             for i in range(self.size[0]):
-                spec[t][i] *= pred[i]
+                #print(pred[i])
+                if pred[i] > 0.7:
+                    spec[t][i] *= pred[i]
+                else:
+                    spec[t][i] = 0
 
         wav = self.__istft(spec.T)
         wf.write(self.output_path, self.rate, wav)
