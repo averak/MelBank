@@ -43,6 +43,7 @@ class Separator(object):
         model.add(Dense(512, activation='relu'))
         model.add(Dropout(0.3))
         model.add(Dense(self.size[0], activation='sigmoid'))
+
         # コンパイル
         model.compile(optimizer='adam',
                       loss='binary_crossentropy',
@@ -151,6 +152,6 @@ class Separator(object):
 
 
 if __name__ == '__main__':
-    infer = Separator(True)
+    infer = Separator()
     # infer.separate('./tmp/mixed.wav')
-    # infer.separate('./tmp/source.wav')
+    infer.separate('./tmp/source.wav')
