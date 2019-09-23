@@ -36,11 +36,11 @@ class Separator(object):
     def __build(self):
         ## -----*----- NNを構築 -----*-----##
         model = Sequential()
-        model.add(LSTM(units=512, input_shape=(self.size[0], 1)))
+        model.add(LSTM(units=256, input_shape=(self.size[0], 1)))
         model.add(Dropout(0.3))
-        model.add(Dense(1024, activation='relu'))
+        model.add(Dense(512, activation='relu'))
         model.add(Dropout(0.3))
-        model.add(Dense(1024, activation='relu'))
+        model.add(Dense(512, activation='relu'))
         model.add(Dropout(0.3))
         model.add(Dense(self.size[0], activation='sigmoid'))
         # コンパイル
@@ -52,7 +52,7 @@ class Separator(object):
 
     def __train(self, x, y):
         ## -----*----- 学習 -----*-----##
-        self.__model.fit(x, y, epochs=50, batch_size=100)
+        self.__model.fit(x, y, epochs=30, batch_size=100)
         # 学習モデルを保存
         self.__model.save_weights(self.model_path)
 
@@ -70,14 +70,17 @@ class Separator(object):
 
             for f in files:
                 # データの水増し
-                for bias in [0.5, 1.0, 1.5]:
+                '''for bias in [0.5, 1.0, 1.5]:
                     # スペクトログラム
-                    spec[-1].append(self.__stft(file=f).T * bias)
+                    spec[-1].append(self.__stft(file=f).T * bias)'''
+                spec[-1].append(self.__stft(file=f).T)
 
         # 教師データ数（多い方に合わせる）
         num = max([len(arr) for arr in spec])
+        print('\n')
 
         for i in range(num):
+            print("\033[1ASTEP：{0}/{1}".format(i + 1, num))
             for t in range(self.size[1]):
                 # 時間毎に区切る
                 sum = spec[0][i % len(spec[0])][t] + spec[1][i % len(spec[1])][t]
