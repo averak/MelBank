@@ -1,11 +1,11 @@
 ## -----*----- Makefile -----*----- ##
 
-# リアルタイムで音声録音
-record.always: ./lib/scripts/detection.py
-	@python ./lib/scripts/detection.py
+# リアルタイムで音源分離
+exec: ./exec.py
+	@python ./exec.py
 
-# 一度だけ音声録音
-record.once: ./lib/scripts/recording.py
+# 音声録音
+record: ./lib/scripts/recording.py
 	@python ./lib/scripts/recording.py
 
 # 教師データの元を録音
