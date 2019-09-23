@@ -135,11 +135,12 @@ class Separator(object):
     def separate(self, file):
         ## -----*----- 音源分離 -----*-----##
         spec = self.__stft(file=file, to_log=False).T
+        spec_pred = self.__stft(file=file, to_log=True).T
 
         # 各時間ごとにループ
         for t in range(spec.shape[0]):
             # 推論
-            pred = self.predict(spec[t])
+            pred = self.predict(spec_pred[t])
             # 分類
             for i in range(self.size[0]):
                 if pred[i] > 0.9:
