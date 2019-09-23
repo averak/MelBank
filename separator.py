@@ -143,7 +143,7 @@ class Separator(object):
             pred = self.predict(spec_pred[t])
             # 分類
             for i in range(self.size[0]):
-                if pred[i] > 0.9:
+                if pred[i] > 0.8:
                     spec[t][i] *= pred[i]
                 else:
                     spec[t][i] = 0
