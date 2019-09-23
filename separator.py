@@ -9,7 +9,7 @@ from scipy import signal
 import glob, os
 
 
-class Recognizer(object):
+class Separator(object):
     def __init__(self, train=False):
         ## -----*----- コンストラクタ -----*-----##
         # ファイルパス
@@ -36,17 +36,15 @@ class Recognizer(object):
     def __build(self):
         ## -----*----- NNを構築 -----*-----##
         model = Sequential()
-        model.add(LSTM(units=128, input_shape=(self.size[0], 1)))
+        model.add(LSTM(units=512, input_shape=(self.size[0], 1)))
         model.add(Dropout(0.3))
-        model.add(Dense(256, activation='relu'))
+        model.add(Dense(1024, activation='relu'))
         model.add(Dropout(0.3))
-        model.add(Dense(256, activation='relu'))
-        model.add(Dropout(0.3))
-        model.add(Dense(128, activation='relu'))
+        model.add(Dense(1024, activation='relu'))
         model.add(Dropout(0.3))
         model.add(Dense(self.size[0], activation='sigmoid'))
         # コンパイル
-        model.compile(optimizer='rmsprop',
+        model.compile(optimizer='adam',
                       loss='binary_crossentropy',
                       metrics=['accuracy'])
 
@@ -71,8 +69,10 @@ class Recognizer(object):
             spec.append([])
 
             for f in files:
-                # スペクトログラム
-                spec[-1].append(self.__stft(file=f).T)
+                # データの水増し
+                for bias in [0.5, 1.0, 1.5]:
+                    # スペクトログラム
+                    spec[-1].append(self.__stft(file=f).T * bias)
 
         # 教師データ数（多い方に合わせる）
         num = max([len(arr) for arr in spec])
@@ -86,8 +86,7 @@ class Recognizer(object):
                 # 周波数成分を話者に分類
                 y.append(np.zeros(self.size[0]))
                 for j in range(self.size[0]):
-                    #if spec[0][i%len(spec[0])][t][j] > spec[1][i%len(spec[1])][t][j]:
-                    if abs(spec[0][i%len(spec[0])][t][j]) > abs(spec[1][i%len(spec[1])][t][j]):
+                    if spec[0][i % len(spec[0])][t][j] > spec[1][i % len(spec[1])][t][j]:
                         y[-1][j] = 1.0
 
         x = np.array(x).reshape((len(x), self.size[0], 1))
@@ -149,6 +148,6 @@ class Recognizer(object):
 
 
 if __name__ == '__main__':
-    infer = Recognizer()
+    infer = Separator(True)
     # infer.separate('./tmp/mixed.wav')
-    infer.separate('./tmp/source.wav')
+    # infer.separate('./tmp/source.wav')
