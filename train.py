@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from recognizer import Recognizer
+from separator import Separator
 
 if __name__ == '__main__':
-    Recognizer(True)
+    Separator(True)
