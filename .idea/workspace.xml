@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2d68238-6971-45d6-9a40-47ade6222eeb" name="Default Changelist" comment="ls">
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +22,7 @@
         <entry file="file://$PROJECT_DIR$/separator.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="892">
-              <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
+              <caret line="127" selection-start-line="127" selection-end-line="127" />
               <folding>
                 <element signature="e#24#65#0" expanded="true" />
                 <element signature="e#3421#3609#0" />
@@ -35,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/record.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="484">
-              <caret line="47" column="18" lean-forward="true" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+              <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
               <folding>
                 <element signature="e#24#55#0" expanded="true" />
               </folding>
@@ -43,11 +43,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Makefile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+            <state relative-caret-position="117">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="416">
+                <caret line="32" selection-start-line="32" selection-end-line="32" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Documents/テンプレート/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="429">
+                <caret line="33" selection-start-line="33" selection-end-line="33" selection-end-column="8" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -96,7 +120,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$USER_HOME$/Documents/テンプレート/README.md" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/setup.sh" />
         <option value="$PROJECT_DIR$/recording.py" />
         <option value="$PROJECT_DIR$/detection.py" />
@@ -146,6 +169,7 @@
         <option value="$PROJECT_DIR$/config/outer.txt" />
         <option value="$PROJECT_DIR$/exec.py" />
         <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -242,12 +266,12 @@
       <workItem from="1568870141702" duration="14755000" />
       <workItem from="1568969324514" duration="1885000" />
       <workItem from="1568971365884" duration="1134000" />
-      <workItem from="1568972780344" duration="21200000" />
+      <workItem from="1568972780344" duration="21796000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85648000" />
+    <option name="totallyTimeSpent" value="86244000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="0" width="1920" height="1080" extended-state="0" />
@@ -327,20 +351,6 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="requirements.txt" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/setup.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.zshrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="255" column="19" lean-forward="true" selection-start-line="255" selection-start-column="19" selection-end-line="255" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Sound_Source_Separation/detection.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -600,7 +610,7 @@
     <entry file="file://$PROJECT_DIR$/separator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="892">
-          <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
           <folding>
             <element signature="e#24#65#0" expanded="true" />
             <element signature="e#3421#3609#0" />
@@ -631,17 +641,37 @@
     <entry file="file://$PROJECT_DIR$/record.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
-          <caret line="47" column="18" lean-forward="true" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+          <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
           <folding>
             <element signature="e#24#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Documents/テンプレート/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="429">
+            <caret line="33" selection-start-line="33" selection-end-line="33" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        <state relative-caret-position="117">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="416">
+            <caret line="32" selection-start-line="32" selection-end-line="32" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
