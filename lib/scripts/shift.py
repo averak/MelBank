@@ -64,9 +64,12 @@ class Shift(object):
 if __name__ == '__main__':
     shift = Shift()
 
-    files = glob.glob('./tmp/recorded/*/*.wav')
-    for file in files:
-        cmd = file.split('/')[3]
-        dats, dats_frames = shift.get_dats(file)
-        total_shift_size, shift_size = shift.get_shift_size(dats_frames)
-        shift.save_shift_audio(dats, cmd, total_shift_size, shift_size)
+    names = glob.glob('./tmp/recorded/*')
+
+    for name in names:
+        shift.cnt = 0
+        for file in  glob.glob('{0}/*.wav'.format(name)):
+            cmd = file.split('/')[3]
+            dats, dats_frames = shift.get_dats(file)
+            total_shift_size, shift_size = shift.get_shift_size(dats_frames)
+            shift.save_shift_audio(dats, cmd, total_shift_size, shift_size)

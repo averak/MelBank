@@ -133,7 +133,17 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/record.py">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/recording.py">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/separator.py">
           <value>
             <PaintGroupHighlightMap />
           </value>
@@ -144,6 +154,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/test.py">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/test/make_teacher.py">
           <value>
             <PaintGroupHighlightMap />
           </value>
