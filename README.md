@@ -1,18 +1,34 @@
 MelBank
 =======
 
-In development...
+Sound separation of multiple speakers on a single channel.
 
 
 ## Description
 
-Sound separation of multiple speakers on a single channel.
+Enables not only noise-speech separation but also speech-speech separation.
 
 
 ## Requirement
 
 - macOS Mojave 10.14.6
 - Python 3.5.2
+
+
+## Usage
+1. Creating teacher data
+```
+$ make teach.record  # Recording each sound source to be separated
+$ make teach.build
+```
+2. Training
+```
+$ make train
+```
+3. Sound source separation
+```
+$ make exec
+```
 
 
 ## Installation
