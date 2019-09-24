@@ -53,7 +53,7 @@ class Separator(object):
 
     def __train(self, x, y):
         ## -----*----- 学習 -----*-----##
-        self.__model.fit(x, y, epochs=100, batch_size=100)
+        self.__model.fit(x, y, epochs=80, batch_size=100)
         # 学習モデルを保存
         self.__model.save_weights(self.model_path)
 
@@ -143,8 +143,10 @@ class Separator(object):
             pred = self.predict(spec_pred[t])
             # 分類
             for i in range(self.size[0]):
-                if pred[i] > 0.8:
+                if pred[i] > 0.75:
                     spec[t][i] *= pred[i]
+                elif pred[i] > 0.5:
+                    spec[t][i] *= 0.1
                 else:
                     spec[t][i] = 0
 
@@ -154,5 +156,4 @@ class Separator(object):
 
 if __name__ == '__main__':
     infer = Separator()
-    # infer.separate('./tmp/mixed.wav')
     infer.separate('./tmp/source.wav')
