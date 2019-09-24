@@ -140,7 +140,7 @@ class Detection(Recording):
         keys = ['average', 'amp', 'border']
         for i in range(3):
             for j in range(int(self.state[keys[i]] / 20 + 3)):
-                meter[i] += '■'
+                meter[i] += '■■'
         if self.record_start.is_set():
             if self.state['average'] >= self.state['border']:
                 meter[0] = '\033[94m' + meter[0] + '\033[0m'
