@@ -148,6 +148,11 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/realtime.py">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/recognizer.py">
           <value>
             <PaintGroupHighlightMap />
