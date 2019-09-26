@@ -39,8 +39,8 @@ class Detection(Recording):
         ## -----*----- 検出スタート -----*----- ##
         time.sleep(self.settings['past_second'])
         # 閾値の更新を行うサブスレッドの起動
-        self.thread = threading.Thread(target=self.update_border)
-        self.thread.start()
+        thread = threading.Thread(target=self.update_border)
+        thread.start()
 
         self.pastTime = time.time()
 
