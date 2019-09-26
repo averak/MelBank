@@ -1,8 +1,12 @@
 ## -----*----- Makefile -----*----- ##
 
-# リアルタイムで音源分離
+# 音源分離（録音->分離）
 exec:
 	@python ./exec.py
+
+# 音源分離（リアルタイム）
+realtime:
+	@python ./realtime.py
 
 # 音声録音
 record:
