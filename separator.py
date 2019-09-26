@@ -103,6 +103,7 @@ class Separator(object):
             wav = wf.read(file)[1]
         spec = signal.stft(wav, fs=self.rate, nperseg=256)[2]
         if to_log:
+            spec = np.where(spec == 0, 0.1 ** 10, spec)
             spec = 10 * np.log10(np.abs(spec))
         return spec
 
@@ -117,7 +118,10 @@ class Separator(object):
         ## -----*----- 0~1に正規化 -----*----- ##
         min = x.min(axis=axis, keepdims=True)
         max = x.max(axis=axis, keepdims=True)
-        result = (x - min) / (max - min)
+        if not (max - min) == 0:
+            result = (x - min) / (max - min)
+        else:
+            result = x
         return result
 
     def load_model(self, path):
@@ -147,6 +151,8 @@ class Separator(object):
                     spec[t][i] *= pred[i]
                 elif pred[i] > 0.5:
                     spec[t][i] *= 0.1
+                elif pred[i] > 0.3:
+                    spec[t][i] *= 0.01
                 else:
                     spec[t][i] = 0
 
