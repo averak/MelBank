@@ -17,7 +17,7 @@ class Filter(object):
             'format': pyaudio.paInt16,
             'channels': 1,
             'rate': 8000,
-            'chunk': 1024,
+            'chunk': 1024
         }
         self.stream = self._pa.open(
             format=self.settings['format'],

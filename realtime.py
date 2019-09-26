@@ -21,7 +21,6 @@ class Detection(object):
             'channels': 1,
             'rate': 8000 * 4,
             'chunk': 1024,
-            'past_second': 0.2
         }
         self.f_stream = self._pa.open(
             format=pyaudio.paFloat32,
@@ -40,10 +39,9 @@ class Detection(object):
 
     def start(self):
         ## -----*----- 検出スタート -----*----- ##
-        time.sleep(self.settings['past_second'])
         # 閾値の更新を行うサブスレッドの起動
-        self.thread = threading.Thread(target=self.update_border)
-        self.thread.start()
+        thread = threading.Thread(target=self.update_border)
+        thread.start()
 
         self.pastTime = time.time()
 
