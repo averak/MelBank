@@ -20,7 +20,7 @@ class Separator(object):
         # サンプリングレート
         self.rate = wf.read(self.format_path)[0]
         # スペクトログラムのサイズ
-        self.size = self.__stft(file=self.format_path).shape
+        self.size = self.stft(file=self.format_path).shape
 
         # モデルのビルド
         self.__model = self.__build()
@@ -73,8 +73,8 @@ class Separator(object):
                 # データの水増し
                 '''for bias in [0.5, 1.0, 1.5]:
                     # スペクトログラム
-                    spec[-1].append(self.__stft(file=f).T * bias)'''
-                spec[-1].append(self.__stft(file=f).T)
+                    spec[-1].append(self.stft(file=f).T * bias)'''
+                spec[-1].append(self.stft(file=f).T)
 
         # 教師データ数（多い方に合わせる）
         num = max([len(arr) for arr in spec])
@@ -97,7 +97,7 @@ class Separator(object):
         y = np.array(y)
         return x, y
 
-    def __stft(self, wav=None, file=None, to_log=True):
+    def stft(self, wav=None, file=None, to_log=True):
         ## -----*----- 短時間フーリエ変換 -----*----- ##
         if file != None:
             wav = wf.read(file)[1]
@@ -107,7 +107,7 @@ class Separator(object):
             spec = 10 * np.log10(np.abs(spec))
         return spec
 
-    def __istft(self, spec, to_int=True):
+    def istft(self, spec, to_int=True):
         ## -----*----- 逆短時間フーリエ変換 -----*----- ##
         wav = signal.istft(spec, fs=self.rate, nperseg=256)[1]
         if to_int:
@@ -138,8 +138,8 @@ class Separator(object):
 
     def separate(self, file):
         ## -----*----- 音源分離 -----*-----##
-        spec = self.__stft(file=file, to_log=False).T
-        spec_pred = self.__stft(file=file, to_log=True).T
+        spec = self.stft(file=file, to_log=False).T
+        spec_pred = self.stft(file=file, to_log=True).T
 
         # 各時間ごとにループ
         for t in range(spec.shape[0]):
@@ -156,7 +156,7 @@ class Separator(object):
                 else:
                     spec[t][i] = 0
 
-        wav = self.__istft(spec.T)
+        wav = self.istft(spec.T)
         wf.write(self.output_path, self.rate, wav)
 
 
