@@ -53,7 +53,7 @@ class Separator(object):
 
     def __train(self, x, y):
         ## -----*----- 学習 -----*-----##
-        self.__model.fit(x, y, epochs=80, batch_size=100)
+        self.__model.fit(x, y, epochs=100, batch_size=100)
         # 学習モデルを保存
         self.__model.save_weights(self.model_path)
 

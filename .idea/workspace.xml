@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2d68238-6971-45d6-9a40-47ade6222eeb" name="Default Changelist" comment="m">
-      <change beforePath="$PROJECT_DIR$/test/plot_wav.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/plot_wav.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/StickySelectionHighlights.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/StickySelectionHighlights.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/separator.py" beforeDir="false" afterPath="$PROJECT_DIR$/separator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/mixed.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/mixed.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/real_time.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/real_time.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/separate.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/separate.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/source.wav" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/source.wav" afterDir="false" />
@@ -24,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/separator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="968">
-              <caret line="131" column="34" lean-forward="true" selection-start-line="131" selection-start-column="34" selection-end-line="131" selection-end-column="34" />
+            <state relative-caret-position="1846">
+              <caret line="142" column="33" selection-start-line="142" selection-start-column="33" selection-end-line="142" selection-end-column="41" />
               <folding>
                 <element signature="e#24#65#0" expanded="true" />
               </folding>
@@ -34,12 +36,36 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exec.py">
+        <entry file="file://$PROJECT_DIR$/lib/scripts/recording.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="143">
+              <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
               <folding>
                 <element signature="e#24#44#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exec.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1">
+              <caret line="137" column="28" selection-start-line="137" selection-start-column="28" selection-end-line="137" selection-end-column="28" />
+              <folding>
+                <element signature="e#24#44#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="599">
+              <caret line="59" selection-start-line="59" selection-end-line="59" />
+              <folding>
+                <element signature="e#23#54#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -48,8 +74,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/real_time.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+            <state relative-caret-position="13">
+              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -100,8 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/recording.py" />
-        <option value="$PROJECT_DIR$/detection.py" />
         <option value="$PROJECT_DIR$/console.py" />
         <option value="$PROJECT_DIR$/lib/test.py" />
         <option value="$PROJECT_DIR$/Pakefile.py" />
@@ -130,12 +154,10 @@
         <option value="$PROJECT_DIR$/../KeyInput/.git/config" />
         <option value="$PROJECT_DIR$/../KeyInput/loop.py" />
         <option value="$PROJECT_DIR$/test_make.py" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/enter.py" />
         <option value="$PROJECT_DIR$/make_teacher.py" />
         <option value="$PROJECT_DIR$/test/mix_two_speakers.py" />
         <option value="$PROJECT_DIR$/test/sum_rate.py" />
-        <option value="$PROJECT_DIR$/test/to_spec.py" />
         <option value="$PROJECT_DIR$/test/make_teacher.py" />
         <option value="$PROJECT_DIR$/recognizer.py" />
         <option value="$PROJECT_DIR$/lib/scripts/shift.py" />
@@ -146,10 +168,14 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/train.py" />
-        <option value="$PROJECT_DIR$/separator.py" />
-        <option value="$PROJECT_DIR$/exec.py" />
-        <option value="$PROJECT_DIR$/test/mixed.py" />
         <option value="$PROJECT_DIR$/test/plot_wav.py" />
+        <option value="$PROJECT_DIR$/pyaudio_to_spec.py" />
+        <option value="$PROJECT_DIR$/test/mixed.py" />
+        <option value="$PROJECT_DIR$/test/to_spec.py" />
+        <option value="$PROJECT_DIR$/exec.py" />
+        <option value="$PROJECT_DIR$/separator.py" />
+        <option value="$PROJECT_DIR$/test01.py" />
+        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/test/real_time.py" />
       </list>
     </option>
@@ -171,6 +197,17 @@
             <path>
               <item name="MelBank" type="b2602c69:ProjectViewProjectNode" />
               <item name="MelBank" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MelBank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MelBank" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MelBank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MelBank" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MelBank" type="b2602c69:ProjectViewProjectNode" />
@@ -231,12 +268,12 @@
       <workItem from="1568969324514" duration="1885000" />
       <workItem from="1568971365884" duration="1134000" />
       <workItem from="1568972780344" duration="27173000" />
-      <workItem from="1569283568696" duration="5059000" />
+      <workItem from="1569283568696" duration="18480000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96680000" />
+    <option name="totallyTimeSpent" value="110101000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
@@ -316,16 +353,6 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="requirements.txt" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/東工大附属/課題研究/myProject/src/Recognition/infer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/東工大附属/課題研究/myProject/src/Recognition/api.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Speech_Recognitionのコピー/recognizer.py" />
     <entry file="file://$PROJECT_DIR$/test/nomalize.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -398,7 +425,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$PROJECT_DIR$/test_make.py" />
     <entry file="file://$PROJECT_DIR$/enter.py" />
     <entry file="file://$PROJECT_DIR$/test/mix_two_speaker.py" />
@@ -412,16 +438,6 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Desktop/MelBank/recognizer.py" />
-    <entry file="file://$PROJECT_DIR$/test/plot_spec.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
-          <folding>
-            <element signature="e#23#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/input_audio.py" />
     <entry file="file://$PROJECT_DIR$/test/make_teacher.py" />
     <entry file="file://$PROJECT_DIR$/recognizer.py" />
@@ -445,26 +461,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/scripts/console.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Speech_Recognition/player.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="29" selection-end-column="22" />
-          <folding>
-            <element signature="e#24#62#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/scripts/recording.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1248">
-          <caret line="96" column="23" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="23" />
-          <folding>
-            <element signature="e#24#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$USER_HOME$/Documents/テンプレート/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -494,13 +490,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/setup.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/train.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -518,30 +507,34 @@
     <entry file="file://$PROJECT_DIR$/real_time.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/mixed.py">
+    <entry file="file://$PROJECT_DIR$/test/plot_wav.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-          <folding>
-            <element signature="e#23#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/to_spec.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        <state relative-caret-position="117">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="e#23#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/plot_wav.py">
+    <entry file="file://$PROJECT_DIR$/setup.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="13">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyaudio_to_spec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/plot_spec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
           <folding>
             <element signature="e#23#41#0" expanded="true" />
           </folding>
@@ -558,30 +551,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/separator.py">
+    <entry file="file://$PROJECT_DIR$/../Speech_Recognition/player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="968">
-          <caret line="131" column="34" lean-forward="true" selection-start-line="131" selection-start-column="34" selection-end-line="131" selection-end-column="34" />
+        <state>
+          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
           <folding>
-            <element signature="e#24#65#0" expanded="true" />
+            <element signature="e#24#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/mixed.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding>
+            <element signature="e#23#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/to_spec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding>
+            <element signature="e#23#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/exec.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="1">
+          <caret line="137" column="28" selection-start-line="137" selection-start-column="28" selection-end-line="137" selection-end-column="28" />
           <folding>
             <element signature="e#24#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/separator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1846">
+          <caret line="142" column="33" selection-start-line="142" selection-start-column="33" selection-end-line="142" selection-end-column="41" />
+          <folding>
+            <element signature="e#24#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/scripts/recording.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+          <folding>
+            <element signature="e#24#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="e#23#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/real_time.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        <state relative-caret-position="13">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
         </state>
       </provider>
     </entry>
