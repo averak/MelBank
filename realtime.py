@@ -22,7 +22,7 @@ class Detection(object):
             'rate': 8000 * 4,
             'chunk': 1024,
         }
-        self.f_stream = self._pa.open(
+        self.stream = self._pa.open(
             format=pyaudio.paFloat32,
             channels=self.settings['channels'],
             rate=self.settings['rate'],
@@ -58,7 +58,7 @@ class Detection(object):
 
     def detection(self):
         ## -----*----- 立ち上がり・立ち下がり検出 -----*----- ##
-        voiceData = np.fromstring(self.f_stream.read(self.settings['chunk'], exception_on_overflow=False), np.float32)
+        voiceData = np.fromstring(self.stream.read(self.settings['chunk'], exception_on_overflow=False), np.float32)
         voiceData *= np.hanning(self.settings['chunk'])
         # 振幅スペクトル（0~8000[Hz]）
         x = np.fft.fft(voiceData)
@@ -100,7 +100,6 @@ class Detection(object):
         if self.state['amp'] >= self.state['border']:
             meter[1] = '\033[94m' + meter[1] + '\033[0m'
         return meter
-
 
 if __name__ == '__main__':
     detection = Detection()
