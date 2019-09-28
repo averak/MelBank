@@ -96,7 +96,7 @@ class Detection(object):
         keys = ['average', 'amp', 'border']
         for i in range(3):
             for j in range(int(self.state[keys[i]] / 20 + 3)):
-                meter[i] += '■■'
+                meter[i] += '■'
         if self.state['amp'] >= self.state['border']:
             meter[1] = '\033[94m' + meter[1] + '\033[0m'
         return meter
