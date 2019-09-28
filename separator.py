@@ -51,10 +51,13 @@ class Separator(object):
 
         return model
 
-    def __train(self, x, y):
+    def __train(self, x, y, epochs=50):
         ## -----*----- 学習 -----*-----##
-        self.__model.fit(x, y, epochs=100, batch_size=100)
-        # 学習モデルを保存
+        for step in range(epochs // 10):
+            self.__model.fit(x, y, initial_epoch=step * 10, epochs=(step + 1) * 10, batch_size=100)
+            self.__model.save_weights(self.model_path.replace('.hdf5', '_{0}.hdf5'.format((step + 1))))
+
+        # 最終の学習モデルを保存
         self.__model.save_weights(self.model_path)
 
     def __features_extracter(self):
@@ -70,10 +73,6 @@ class Separator(object):
             spec.append([])
 
             for f in files:
-                # データの水増し
-                '''for bias in [0.5, 1.0, 1.5]:
-                    # スペクトログラム
-                    spec[-1].append(self.stft(file=f).T * bias)'''
                 spec[-1].append(self.stft(file=f).T)
 
         # 教師データ数（多い方に合わせる）
