@@ -3,6 +3,11 @@
   <component name="StickySelectionHighlights">
     <option name="editorHighlights">
       <map>
+        <entry key="$USER_HOME$/.config/karabiner/karabiner.json">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$USER_HOME$/.zshrc">
           <value>
             <PaintGroupHighlightMap />
@@ -174,6 +179,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/setup.sh">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/spectrum_analyzer.py">
           <value>
             <PaintGroupHighlightMap />
           </value>

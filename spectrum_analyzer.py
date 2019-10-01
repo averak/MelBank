@@ -2,6 +2,7 @@
 import pyaudio, wave
 import threading
 import numpy as np
+import matplotlib.pyplot as plt
 from separator import Separator
 
 
@@ -37,6 +38,8 @@ class Filter(object):
         self.is_separate = False
         self.is_end_separate = False
 
+        self.strage = {'original': np.zeros(1024 * 20), 'separated': np.zeros(1024 * 20)}
+
     def exe(self):
         ## -----*----- 処理実行 -----*----- ##
         thread = threading.Thread(target=self.audio_input)
@@ -46,11 +49,28 @@ class Filter(object):
 
         self.audio_output()
 
+    def graphplot(self):
+        if not self.is_end_separate:
+            return
+        self.strage['original'] = np.append(np.delete(self.strage['original'], range(1024)), self.wav)
+        self.strage['separated'] = np.append(np.delete(self.strage['separated'], range(1024)), self.wav_separate)
+        plt.clf()
+        # Original
+        plt.subplot(311)
+        plt.specgram(self.strage['original'], Fs=self.settings['rate'])
+        # Separated
+        plt.subplot(312)
+        plt.specgram(self.strage['separated'], Fs=self.settings['rate'])
+        # Pause
+        plt.pause(.01)
+
     def audio_input(self):
         ## -----*----- 音声入力 -----*----- ##
         while self.stream.is_active():
             self.wav = np.fromstring(self.stream.read(self.settings['chunk'], exception_on_overflow=False),
                                      np.int16)
+
+            self.graphplot()
 
             # 録音開始フラグ反転
             self.is_input = False
