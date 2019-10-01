@@ -8,6 +8,10 @@ exec:
 realtime:
 	@python ./realtime.py
 
+# アナライザ（リアルタイム）
+analyzer:
+	@python ./spectrum_analyzer.py
+
 # 音声録音
 record:
 	@python ./lib/scripts/recording.py
