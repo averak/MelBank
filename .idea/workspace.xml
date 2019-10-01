@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2d68238-6971-45d6-9a40-47ade6222eeb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/StickySelectionHighlights.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/StickySelectionHighlights.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrum_analyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/spectrum_analyzer.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/separator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="261">
+              <caret line="148" selection-start-line="148" selection-end-line="161" selection-end-column="34" />
               <folding>
                 <element signature="e#24#65#0" expanded="true" />
               </folding>
@@ -44,23 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="76" column="8" lean-forward="true" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
-              <folding>
-                <element signature="e#163#181#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spectrum_analyzer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+            <state relative-caret-position="430">
+              <caret line="102" selection-start-line="102" selection-end-line="115" selection-end-column="46" />
               <folding>
                 <element signature="e#23#43#0" expanded="true" />
               </folding>
@@ -291,12 +277,12 @@
       <workItem from="1569660244668" duration="4770000" />
       <workItem from="1569814766400" duration="1095000" />
       <workItem from="1569816445330" duration="3056000" />
-      <workItem from="1569894154800" duration="6853000" />
+      <workItem from="1569894154800" duration="7103000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175032000" />
+    <option name="totallyTimeSpent" value="175282000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -577,16 +563,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/separator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#24#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/Karabiner-settings-cb0c9391815116170381068cd33b65e69e7959cf/karabiner.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -598,16 +574,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4602">
           <caret line="354" column="9" lean-forward="true" selection-start-line="354" selection-start-column="9" selection-end-line="354" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exec.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1013">
-          <caret line="59" column="104" selection-start-line="59" selection-start-column="75" selection-end-line="59" selection-end-column="104" />
-          <folding>
-            <element signature="e#24#44#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -658,10 +624,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/separator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="148" selection-start-line="148" selection-end-line="161" selection-end-column="34" />
+          <folding>
+            <element signature="e#24#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1013">
+          <caret line="59" column="104" selection-start-line="59" selection-start-column="75" selection-end-line="59" selection-end-column="104" />
+          <folding>
+            <element signature="e#24#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spectrum_analyzer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+        <state relative-caret-position="430">
+          <caret line="102" selection-start-line="102" selection-end-line="115" selection-end-column="46" />
           <folding>
             <element signature="e#23#43#0" expanded="true" />
           </folding>
