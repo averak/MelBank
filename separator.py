@@ -46,12 +46,12 @@ class Separator(object):
 
         # コンパイル
         model.compile(optimizer='adam',
-                      loss='binary_crossentropy',
+                      loss='mean_absolute_error',
                       metrics=['accuracy'])
 
         return model
 
-    def __train(self, x, y, epochs=50):
+    def __train(self, x, y, epochs=100):
         ## -----*----- 学習 -----*-----##
         for step in range(epochs // 10):
             self.__model.fit(x, y, initial_epoch=step * 10, epochs=(step + 1) * 10, batch_size=100)
