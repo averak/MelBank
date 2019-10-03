@@ -92,7 +92,7 @@ class Separator(object):
                 for j in range(self.size[0]):
                     # 目的音源の割合
                     rate = pow(10, spec[0][i % len(spec[0])][t][j]) / (
-                            pow(10, spec[0][i % len(spec[0])][t][j]) + pow(10, spec[1][i % len(spec[1])][t][j]))
+                                pow(10, spec[0][i % len(spec[0])][t][j]) + pow(10, spec[1][i % len(spec[1])][t][j]))
                     y[-1][j] = rate
 
         x = np.array(x).reshape((len(x), self.size[0], 1))
@@ -156,5 +156,6 @@ class Separator(object):
 
 
 if __name__ == '__main__':
-    infer = Separator()
-    infer.separate('./tmp/source.wav')
+    infer = Separator(True)
+    #infer.separate('./tmp/source.wav')
+
