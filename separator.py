@@ -46,7 +46,7 @@ class Separator(object):
 
         # コンパイル
         model.compile(optimizer='adam',
-                      loss='mean_absolute_error',
+                      loss='binary_crossentropy',
                       metrics=['accuracy'])
 
         return model

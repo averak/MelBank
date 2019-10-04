@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2d68238-6971-45d6-9a40-47ade6222eeb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/model/model_pure_tone.hdf5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/model.hdf5" beforeDir="false" afterPath="$PROJECT_DIR$/model/model.hdf5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/separator.py" beforeDir="false" afterPath="$PROJECT_DIR$/separator.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,12 +19,12 @@
     <favorites_list name="MelBank" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/separator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
+            <state relative-caret-position="417">
+              <caret line="150" column="41" lean-forward="true" selection-start-line="150" selection-start-column="41" selection-end-line="150" selection-end-column="41" />
               <folding>
                 <element signature="e#24#65#0" expanded="true" />
               </folding>
@@ -147,7 +148,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1680" />
     <option name="height" value="1050" />
   </component>
@@ -156,8 +157,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -232,18 +233,20 @@
       <workItem from="1569816445330" duration="3056000" />
       <workItem from="1569894154800" duration="7413000" />
       <workItem from="1569999371779" duration="4623000" />
-      <workItem from="1570060072138" duration="6270000" />
+      <workItem from="1570060072138" duration="12970000" />
+      <workItem from="1570113861232" duration="43000" />
+      <workItem from="1570152818733" duration="52000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191916000" />
+    <option name="totallyTimeSpent" value="198711000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48660713" visible="true" weight="0.31074482" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48660713" visible="true" weight="0.31807083" />
       <window_info id="Structure" order="1" sideWeight="0.51339287" side_tool="true" weight="0.2893773" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -256,7 +259,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4993895" weight="0.31428573" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4993895" visible="true" weight="0.31428573" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50061053" side_tool="true" weight="0.32857144" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
@@ -514,13 +517,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/Karabiner-settings-298bc76394ec518329e5d0bd7981bd1523270996/karabiner.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="367" column="41" lean-forward="true" selection-start-line="367" selection-start-column="41" selection-end-line="367" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Karabiner-settings-298bc76394ec518329e5d0bd7981bd1523270996/karabiner.json" />
     <entry file="file://$USER_HOME$/.config/karabiner/assets/complex_modifications/1569992458.json" />
     <entry file="file://$USER_HOME$/.config/karabiner/assets/complex_modifications/1569994820.json" />
     <entry file="file://$USER_HOME$/Downloads/Karabiner-settings-298bc76394ec518329e5d0bd7981bd1523270996/assets/complex_modifications/1569992705.json" />
@@ -532,13 +529,7 @@
     <entry file="file://$USER_HOME$/.config/karabiner/assets/complex_modifications/1569995659.json" />
     <entry file="file://$USER_HOME$/.config/karabiner/assets/complex_modifications/1569995676.json" />
     <entry file="file://$USER_HOME$/.config/karabiner/READNE.md" />
-    <entry file="file://$USER_HOME$/Downloads/Karabiner-settings-master/assets/complex_modifications/mouse_key_mode.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="8" column="19" lean-forward="true" selection-end-line="174" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Karabiner-settings-master/assets/complex_modifications/mouse_key_mode.json" />
     <entry file="file://$USER_HOME$/.config/karabiner/karabiner.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
@@ -546,20 +537,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/Karabiner-settings-master 2/assets/complex_modifications/mouse_key_mode.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="28" column="26" lean-forward="true" selection-end-line="174" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Karabiner-settings-master 3/assets/complex_modifications/mouse_key_mode.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="30" column="37" lean-forward="true" selection-end-line="174" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Karabiner-settings-master 2/assets/complex_modifications/mouse_key_mode.json" />
+    <entry file="file://$USER_HOME$/Downloads/Karabiner-settings-master 3/assets/complex_modifications/mouse_key_mode.json" />
     <entry file="file://$USER_HOME$/.config/karabiner/assets/complex_modifications/mouse_key_mode.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="762">
@@ -596,8 +575,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/separator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
+        <state relative-caret-position="417">
+          <caret line="150" column="41" lean-forward="true" selection-start-line="150" selection-start-column="41" selection-end-line="150" selection-end-column="41" />
           <folding>
             <element signature="e#24#65#0" expanded="true" />
           </folding>
