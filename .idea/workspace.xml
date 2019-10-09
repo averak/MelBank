@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e2d68238-6971-45d6-9a40-47ade6222eeb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/model.hdf5" beforeDir="false" afterPath="$PROJECT_DIR$/model/model.hdf5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/separator.py" beforeDir="false" afterPath="$PROJECT_DIR$/separator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/model.hdf5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/separate.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/source.wav" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/separator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="150" column="41" lean-forward="true" selection-start-line="150" selection-start-column="41" selection-end-line="150" selection-end-column="41" />
+            <state relative-caret-position="460">
+              <caret line="151" column="37" selection-start-line="151" selection-start-column="37" selection-end-line="151" selection-end-column="37" />
               <folding>
                 <element signature="e#24#65#0" expanded="true" />
               </folding>
@@ -132,7 +134,6 @@
         <option value="$PROJECT_DIR$/filter.py" />
         <option value="$PROJECT_DIR$/realtime.py" />
         <option value="$PROJECT_DIR$/exec.py" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/spectrum_analyzer.py" />
         <option value="$PROJECT_DIR$/Makefile" />
         <option value="$USER_HOME$/Downloads/Karabiner-settings-298bc76394ec518329e5d0bd7981bd1523270996/karabiner.json" />
@@ -144,6 +145,7 @@
         <option value="$USER_HOME$/.config/karabiner/READNE.md" />
         <option value="$USER_HOME$/.config/karabiner/assets/complex_modifications/mouse_key_mode.json" />
         <option value="$PROJECT_DIR$/rate.py" />
+        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/separator.py" />
       </list>
     </option>
@@ -158,7 +160,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -166,15 +167,11 @@
               <item name="MelBank" type="b2602c69:ProjectViewProjectNode" />
               <item name="MelBank" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="MelBank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MelBank" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -235,18 +232,19 @@
       <workItem from="1569999371779" duration="4623000" />
       <workItem from="1570060072138" duration="12970000" />
       <workItem from="1570113861232" duration="43000" />
-      <workItem from="1570152818733" duration="52000" />
+      <workItem from="1570152818733" duration="2662000" />
+      <workItem from="1570215749457" duration="608000" />
+      <workItem from="1570245737453" duration="104000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198711000" />
+    <option name="totallyTimeSpent" value="202033000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48660713" visible="true" weight="0.31807083" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48660713" visible="true" weight="0.32539684" />
       <window_info id="Structure" order="1" sideWeight="0.51339287" side_tool="true" weight="0.2893773" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -476,7 +474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$PROJECT_DIR$/test/plot_wav.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
@@ -522,9 +519,7 @@
     <entry file="file://$USER_HOME$/.config/karabiner/assets/complex_modifications/1569994820.json" />
     <entry file="file://$USER_HOME$/Downloads/Karabiner-settings-298bc76394ec518329e5d0bd7981bd1523270996/assets/complex_modifications/1569992705.json" />
     <entry file="file://$USER_HOME$/Downloads/Karabiner-settings-298bc76394ec518329e5d0bd7981bd1523270996/assets/complex_modifications/1569992458.json" />
-    <entry file="file://$USER_HOME$/.config/karabiner/assets/complex_modifications/1563632963.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$USER_HOME$/.config/karabiner/assets/complex_modifications/1563632963.json" />
     <entry file="file://$USER_HOME$/.config/karabiner/assets/complex_modifications/1569995370.json" />
     <entry file="file://$USER_HOME$/.config/karabiner/assets/complex_modifications/1569995659.json" />
     <entry file="file://$USER_HOME$/.config/karabiner/assets/complex_modifications/1569995676.json" />
@@ -556,16 +551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2080">
-          <caret line="160" lean-forward="true" selection-start-line="160" selection-end-line="160" />
-          <folding>
-            <element signature="e#24#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -573,10 +558,12 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/rate.py" />
+    <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$PROJECT_DIR$/separator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="150" column="41" lean-forward="true" selection-start-line="150" selection-start-column="41" selection-end-line="150" selection-end-column="41" />
+        <state relative-caret-position="460">
+          <caret line="151" column="37" selection-start-line="151" selection-start-column="37" selection-end-line="151" selection-end-column="37" />
           <folding>
             <element signature="e#24#65#0" expanded="true" />
           </folding>
