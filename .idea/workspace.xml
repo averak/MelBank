@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2d68238-6971-45d6-9a40-47ade6222eeb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/StickySelectionHighlights.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/StickySelectionHighlights.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spectrum_analyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/spectrum_analyzer.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/separator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2145">
-              <caret line="172" column="38" selection-start-line="172" selection-start-column="38" selection-end-line="172" selection-end-column="38" />
+            <state relative-caret-position="151">
+              <caret line="116" column="18" lean-forward="true" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="18" />
               <folding>
                 <element signature="e#24#65#0" expanded="true" />
               </folding>
@@ -31,20 +30,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.zshrc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1508">
-              <caret line="116" selection-start-line="116" selection-end-line="116" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/zsh/setup.sh">
+        <entry file="file://$PROJECT_DIR$/spectrum_analyzer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+            <state relative-caret-position="409">
+              <caret line="116" column="32" selection-start-line="116" selection-start-column="32" selection-end-line="116" selection-end-column="32" />
+              <folding>
+                <element signature="e#23#43#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,9 +46,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>self.f_stream</find>
-      <find>basic</find>
-      <find>shift</find>
       <find>backsla</find>
       <find>delete</find>
       <find>&quot;delete_or_backspace&quot;</find>
@@ -83,6 +73,9 @@
       <find>com</find>
       <find>ks</find>
       <find>ls</find>
+      <find>self.strage\['separated'</find>
+      <find>self.is_end_separate</find>
+      <find>self.wav_separate</find>
     </findStrings>
     <replaceStrings>
       <replace>self.__model</replace>
@@ -145,7 +138,6 @@
         <option value="$PROJECT_DIR$/filter.py" />
         <option value="$PROJECT_DIR$/realtime.py" />
         <option value="$PROJECT_DIR$/exec.py" />
-        <option value="$PROJECT_DIR$/spectrum_analyzer.py" />
         <option value="$PROJECT_DIR$/Makefile" />
         <option value="$USER_HOME$/Downloads/Karabiner-settings-298bc76394ec518329e5d0bd7981bd1523270996/karabiner.json" />
         <option value="$USER_HOME$/.config/karabiner/karabiner.json" />
@@ -158,22 +150,26 @@
         <option value="$PROJECT_DIR$/rate.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/lib/requirements.txt" />
-        <option value="$PROJECT_DIR$/separator.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$USER_HOME$/.zshrc" />
         <option value="$USER_HOME$/zsh/setup.sh" />
+        <option value="$PROJECT_DIR$/separator.py" />
+        <option value="$PROJECT_DIR$/spectrum_analyzer.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="x" value="-1920" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -185,8 +181,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -253,16 +247,18 @@
       <workItem from="1571363712779" duration="947000" />
       <workItem from="1571376994055" duration="5696000" />
       <workItem from="1571475256896" duration="328000" />
+      <workItem from="1571797174878" duration="882000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209004000" />
+    <option name="totallyTimeSpent" value="209886000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="-1920" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48660713" visible="true" weight="0.33638585" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48660713" visible="true" weight="0.2971246" />
       <window_info id="Structure" order="1" sideWeight="0.51339287" side_tool="true" weight="0.2893773" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -275,7 +271,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4993895" visible="true" weight="0.31428573" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4993895" visible="true" weight="0.3049505" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50061053" side_tool="true" weight="0.32857144" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
@@ -518,26 +514,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rate.py" />
     <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$PROJECT_DIR$/lib/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spectrum_analyzer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -562,27 +544,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/zsh/setup.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.zshrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="116" selection-start-line="116" selection-end-line="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/separator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2145">
-          <caret line="172" column="38" selection-start-line="172" selection-start-column="38" selection-end-line="172" selection-end-column="38" />
+        <state relative-caret-position="151">
+          <caret line="116" column="18" lean-forward="true" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="18" />
           <folding>
             <element signature="e#24#65#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.zshrc">
+    <entry file="file://$PROJECT_DIR$/spectrum_analyzer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1508">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/zsh/setup.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        <state relative-caret-position="409">
+          <caret line="116" column="32" selection-start-line="116" selection-start-column="32" selection-end-line="116" selection-end-column="32" />
+          <folding>
+            <element signature="e#23#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
