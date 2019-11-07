@@ -14,7 +14,7 @@ class Separator(object):
         ## -----*----- コンストラクタ -----*-----##
         # ファイルパス
         self.format_path = './config/format.wav'
-        self.model_path = './model/model.hdf5'
+        self.model_path  = './model/model.hdf5'
         self.output_path = './tmp/separate.wav'
 
         # サンプリングレート
