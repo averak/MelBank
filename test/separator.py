@@ -150,11 +150,19 @@ class Separator(object):
             # 分類
             for i in range(self.size[0]):
                 if pred[i] > 0.8:
+                    spec[t][i] *= 1.0
+                elif pred[i] > 0.75:
                     spec[t][i] *= pred[i]
                 elif pred[i] > 0.7:
-                    spec[t][i] *= 0.3
+                    spec[t][i] *= 0.6
+                elif pred[i] > 0.6:
+                    spec[t][i] *= 0.08
+                elif pred[i] > 0.5:
+                    spec[t][i] *= 0.02
+                elif pred[i] > 0.3:
+                    spec[t][i] *= 0.001
                 else:
-                    spec[t][i] = 0
+                    spec[t][i] *= 0.00001
 
         wav = self.istft(spec.T)
         wf.write(self.output_path, self.rate, wav)
