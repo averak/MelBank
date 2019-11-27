@@ -150,17 +150,9 @@ class Separator(object):
             # 分類
             for i in range(self.size[0]):
                 if pred[i] > 0.8:
-                    spec[t][i] *= 1.0
-                elif pred[i] > 0.75:
                     spec[t][i] *= pred[i]
                 elif pred[i] > 0.7:
-                    spec[t][i] *= 0.5
-                elif pred[i] > 0.6:
-                    spec[t][i] *= 0.005
-                elif pred[i] > 0.5:
-                    spec[t][i] *= 0.002
-                elif pred[i] > 0.3:
-                    spec[t][i] *= 0.001
+                    spec[t][i] *= 0.3
                 else:
                     spec[t][i] = 0
 
