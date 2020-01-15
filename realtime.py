@@ -6,7 +6,7 @@ from lib.scripts.console import Console
 from filter import Filter
 
 
-class Detection(object):
+class Realtime(object):
     def __init__(self):
         ## -----*----- コンストラクタ -----*----- ##
         # 分離器
@@ -102,5 +102,5 @@ class Detection(object):
         return meter
 
 if __name__ == '__main__':
-    detection = Detection()
+    detection = Realtime()
     detection.start()

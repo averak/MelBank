@@ -7,7 +7,7 @@ from lib.scripts.console import Console
 from separator import Separator
 
 
-class Detection(Recording):
+class MelBank(Recording):
     def __init__(self):
         ## -----*----- コンストラクタ -----*----- ##
         super().__init__()
@@ -175,5 +175,5 @@ class Detection(Recording):
 
 
 if __name__ == '__main__':
-    detection = Detection()
-    detection.start()
+    mel = MelBank()
+    mel.start()
