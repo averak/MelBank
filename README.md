@@ -11,8 +11,8 @@ Enables not only noise-speech separation but also speech-speech separation.
 
 ## Requirement
 
-- macOS Catalina  10.15.2
-- Python 3.7.4
+- macOS
+- Python 3.7
 - TensorFlow 2.0.0
 
 
