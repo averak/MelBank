@@ -2,7 +2,7 @@
 
 # 音源分離（録音->分離）
 exec:
-	@python ./exec.py
+	@python ./melbank.py
 
 # 音源分離（リアルタイム）
 realtime:
