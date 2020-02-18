@@ -42,7 +42,7 @@ class Separator(object):
         model.add(Dropout(0.3))
         model.add(Dense(256, activation='relu'))
         model.add(Dropout(0.3))
-        model.add(Dense(128, activation='relu'))
+        model.add(Dense(256, activation='relu'))
         model.add(Dropout(0.3))
         model.add(Dense(self.size[0], activation='sigmoid'))
 
@@ -89,10 +89,8 @@ class Separator(object):
                 # 周波数成分を話者に分類
                 y.append(np.zeros(self.size[0]))
                 for j in range(self.size[0]):
-                    # 目的音源の割合
-                    rate = pow(10, spec[0][i % len(spec[0])][t][j]) / (
-                            pow(10, spec[0][i % len(spec[0])][t][j]) + pow(10, spec[1][i % len(spec[1])][t][j]))
-                    y[-1][j] = rate
+                    if abs(spec[0][i%len(spec[0])][t][j]) > abs(spec[1][i%len(spec[1])][t][j]):
+                        y[-1][j] = 1
 
         x = np.array(x).reshape((len(x), self.size[0], 1))
         y = np.array(y)
