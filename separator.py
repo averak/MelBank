@@ -79,7 +79,6 @@ class Separator(object):
 
         # 教師データ数（多い方に合わせる）
         num = max([len(arr) for arr in spec])
-        print('\n')
 
         for i in tqdm(range(num)):
             for t in range(self.size[1]):
