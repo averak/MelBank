@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from tensorflow.keras.layers import Input
 from tensorflow.keras.layers import Dense
 from tensorflow.keras.layers import LSTM
 from tensorflow.keras.layers import Bidirectional
@@ -38,7 +39,9 @@ class Separator(object):
     def __build(self):
         ## -----*----- NNを構築 -----*-----##
         model = Sequential()
-        model.add(Bidirectional(LSTM(units=128, input_shape=(self.size[0], 1))))
+        model.add(Input(shape=(self.size[0], 1)))
+        #model.add(Bidirectional(LSTM(units=128, input_shape=(self.size[0], 1))))
+        model.add(Bidirectional(LSTM(128)))
         model.add(Dropout(0.3))
         model.add(Dense(256, activation='relu'))
         model.add(Dropout(0.3))
