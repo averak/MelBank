@@ -8,6 +8,7 @@ import numpy as np
 import scipy.io.wavfile as wf
 from scipy import signal
 import glob, os
+from tqdm import tqdm
 
 
 class Separator(object):
@@ -81,8 +82,7 @@ class Separator(object):
         num = max([len(arr) for arr in spec])
         print('\n')
 
-        for i in range(num):
-            print("\033[1ASTEP：{0}/{1}".format(i + 1, num))
+        for i in tqdm(range(num)):
             for t in range(self.size[1]):
                 # 時間毎に区切る
                 sum = spec[0][i % len(spec[0])][t] + spec[1][i % len(spec[1])][t]
