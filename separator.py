@@ -78,7 +78,6 @@ class Separator(object):
                 spec[-1].append(self.stft(file=f).T)
 
         # 教師データ数（多い方に合わせる）
-        print(len(spec))
         num = max([len(arr) for arr in spec])
         print('\n')
 
