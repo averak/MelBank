@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from tensorflow.keras.layers import Dense
 from tensorflow.keras.layers import LSTM
+from tensorflow.keras.layers import Bidirectional
 from tensorflow.keras.layers import Dropout
 from tensorflow.keras import Sequential
 import numpy as np
@@ -36,11 +37,11 @@ class Separator(object):
     def __build(self):
         ## -----*----- NNを構築 -----*-----##
         model = Sequential()
-        model.add(LSTM(units=256, input_shape=(self.size[0], 1)))
+        model.add(Bidirectional(LSTM(units=128, input_shape=(self.size[0], 1))))
         model.add(Dropout(0.3))
-        model.add(Dense(512, activation='relu'))
+        model.add(Dense(256, activation='relu'))
         model.add(Dropout(0.3))
-        model.add(Dense(512, activation='relu'))
+        model.add(Dense(128, activation='relu'))
         model.add(Dropout(0.3))
         model.add(Dense(self.size[0], activation='sigmoid'))
 
