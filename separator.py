@@ -40,7 +40,6 @@ class Separator(object):
         ## -----*----- NNを構築 -----*-----##
         model = Sequential()
         model.add(Input(shape=(self.size[0], 1)))
-        #model.add(Bidirectional(LSTM(units=128, input_shape=(self.size[0], 1))))
         model.add(Bidirectional(LSTM(128)))
         model.add(Dropout(0.3))
         model.add(Dense(256, activation='relu'))
