@@ -5,6 +5,8 @@ import numpy as np
 from lib.scripts.recording import Recording
 from lib.scripts.console import Console
 from separator import Separator
+import warnings
+warnings.simplefilter("ignore", DeprecationWarning)
 
 
 class MelBank(Recording):
