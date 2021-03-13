@@ -24,12 +24,15 @@ def exec(file_name: str) -> np.ndarray:
 
 # convert wave -> spectrogram
 def stft(wav: np.ndarray, to_log: bool) -> np.ndarray:
-    result: np.ndarray = signal.stft(wav, fs=config.WAVE_RATE, nperseg=256)[2]
+    result: np.ndarray = signal.stft(wav, fs=config.WAVE_RATE)[2]
 
     # convert to log scale
     if to_log:
         result = np.where(result == 0, 0.1 ** 10, result)
         result = 10 * np.log10(np.abs(result))
+
+    # time <-> freq
+    result = result.T
 
     return result
 

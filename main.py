@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 import argparse
 
+from core import config
+from core import record
+from core import preprocessing
 
 if __name__ == '__main__':
     # options
@@ -21,11 +24,20 @@ if __name__ == '__main__':
 
     if args.train:
         pass
+
     if args.record:
-        pass
+        import time
+
+        rec: record.Record = record.Record()
+        print('start')
+        rec.start()
+        time.sleep(1.5)
+        print('stop')
+        rec.stop()
+        rec.exit()
+
     if args.build:
-        pass
+        preprocessing.exec(config.RECORD_WAV_PATH)
+
     if args.demo:
         pass
-    else:
-        parser.print_help()

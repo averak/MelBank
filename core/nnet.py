@@ -10,7 +10,6 @@ class NNet:
     def __init__(self):
         self.nnet: Model = self.make_nnet()
 
-    # make nnet with keras
     def make_nnet(self) -> Model:
         input_layer = layers.Input(shape=config.INPUT_SHAPE)
         hidden_layer1 = layers.Dense(256, activation='relu')(input_layer)
@@ -25,7 +24,7 @@ class NNet:
         result.compile(
             optimizer=config.OPTIMIZER,
             loss=config.LOSS,
-            metrics=['accuracy'],
+            metrics=config.METRICS,
         )
 
         # load trained weights
@@ -33,6 +32,23 @@ class NNet:
             result.load_weights(config.MODEL_PATH)
 
         return result
+
+    def train(self, x: np.ndarray, y: np.ndarray) -> None:
+        for step in range(config.EPOCHS):
+            self.nnet.fit(
+                x,
+                y,
+                initial_epoch=step,
+                epochs=step + 1,
+                batch_size=config.BATCH_SIZE,
+                validation_split=config.VALIDATION_SPLIT,
+            )
+
+            # save checkpoint
+            self.nnet.save_weights('%s/%d.h5' % (config.MODEL_ROOT_PATH, step))
+
+        # save final weights
+        self.nnet.save_weights(config.MODEL_PATH)
 
     # predict the time-freq mask
     def predict(self, data: np.ndarray) -> np.ndarray:

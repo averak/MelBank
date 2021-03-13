@@ -14,10 +14,13 @@ WAVE_RATE: int = 16000
 WAVE_SPLIT_INTERVAL: float = 1.0
 WAVE_CHANNELS: int = 1
 WAVE_CHUNK: int = 2048
-DATA_SAMPLES: int = 641
+DATA_SAMPLES: int = 129
 
 # training params
 EPOCHS: int = 50
+BATCH_SIZE: int = 32
+VALIDATION_SPLIT: float = 0.1
 OPTIMIZER: str = 'adam'
 LOSS: str = 'binary_crossentropy'
+METRICS: list = ['accuracy']
 INPUT_SHAPE: list = (DATA_SAMPLES, 1)
