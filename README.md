@@ -2,11 +2,9 @@
 
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
-Sound separation of multiple speakers on a single channel.
+This project objective is to separate the sound of multiple speakers on a single channel.
 
-## Description
-
-Enables not only noise-speech separation but also speech-speech separation.
+It enables not only noise-speech separation, but also speech-speech separation.
 
 ## Requirement
 
