@@ -24,6 +24,11 @@ $ cd <this repo>
 $ pipenv install
 ```
 
+You also need to install `portaudio`.
+
+- macOS - `brew install portaudio`
+- Ubuntu - `sudo apt-get install portaudio19-dev`
+
 ## Usage
 
 ### 1. Create teacher data
