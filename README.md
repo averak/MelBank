@@ -6,6 +6,10 @@ This project objective is to separate the sound of multiple speakers on a single
 
 It enables not only noise-speech separation, but also speech-speech separation.
 
+## Demo
+
+Cannot play demo audio in GitHub. If you want to listen to demo audio, look [this](demo).
+
 ## Requirement
 
 - Python ~> 3.8
@@ -40,4 +44,3 @@ $ cd <this repo>
 
 $ pipenv install
 ```
-
