@@ -15,27 +15,6 @@ Cannot play demo audio in GitHub. If you want to listen to demo audio, look [thi
 - Python ~> 3.8
 - TensorFlow
 
-## Usage
-
-1. Creating teacher data
-
-```
-$ make teach.record  # Recording each sound source to be separated
-$ make teach.build
-```
-
-2. Training
-
-```
-$ make train
-```
-
-3. Sound source separation
-
-```
-$ make exec
-```
-
 ## Installation
 
 ```
@@ -43,4 +22,31 @@ $ git clone <this repo>
 $ cd <this repo>
 
 $ pipenv install
+```
+
+## Usage
+
+### 1. Create teacher data
+
+```
+$ pipenv run record # Recording each sound source to be separated
+$ pipenv run build  # Build teacher data
+```
+
+### 2. Training
+
+```
+$ pipenv run train
+```
+
+### 3. Start demo!
+
+```
+$ pipenv run demo
+```
+
+If you want to know the details of how to use this, run the following command.
+
+```sh
+$ pipenv run help
 ```
