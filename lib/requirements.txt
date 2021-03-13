@@ -1,7 +1,0 @@
-###### Python libraries ######
-
-numpy == 1.16.4
-tensorflow == 2.1.0
-wave==0.0.2
-pyaudio==0.2.11
-matplotlib==3.0.3

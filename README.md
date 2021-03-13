@@ -11,9 +11,8 @@ Enables not only noise-speech separation but also speech-speech separation.
 
 ## Requirement
 
-- macOS
-- Python 3.7
-- TensorFlow 2.0.0
+- Python ~> 3.8
+- TensorFlow
 
 
 ## Usage
@@ -35,7 +34,8 @@ $ make exec
 ## Installation
 
 ```
-$ git clone https://github.com/Lab-info/MelBank
-$ cd MelBank
-$ sh setup.sh
+$ git clone <this repo>
+$ cd <this repo>
+
+$ pipenv install
 ```
