@@ -11,7 +11,6 @@ def exec(file_name: str) -> np.ndarray:
     spec: np.ndarray = stft(wav, True)
 
     result: np.ndarray = np.empty((0, config.DATA_SAMPLES))
-    result: np.ndarray = np.empty((0, config.DATA_SAMPLES))
 
     for sample in spec:
         # preprocessing
@@ -65,4 +64,3 @@ def filter(data: np.ndarray) -> np.ndarray:
             bpf[i] = 1
 
     return data * bpf
-
