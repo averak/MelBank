@@ -25,4 +25,4 @@ VALIDATION_SPLIT: float = 0.1
 OPTIMIZER: str = 'adam'
 LOSS: str = 'binary_crossentropy'
 METRICS: list = ['accuracy']
-INPUT_SHAPE: list = (DATA_SAMPLES, 1)
+INPUT_SHAPE: tuple = (DATA_SAMPLES, 1)
