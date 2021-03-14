@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+import os
+import glob
 import argparse
 
 from core import config
@@ -45,7 +47,7 @@ def record_mode():
             recorder.stop()
 
             # <save_root_path>/<save_index>.wav
-            file_name = '%s/%d.wav' % (save_root_path, save_index)
+            file_name: str = '%s/%d.wav' % (save_root_path, save_index)
             recorder.save(file_name)
             print(message.CREATED_FILE_MSG(file_name))
             save_index += 1
@@ -63,6 +65,20 @@ def demo_mode():
     return
 
 
+def clear_mode():
+    data_dirs: list = [
+        config.SPEAKER_ROOT_PATH,
+        config.NOISE_ROOT_PATH,
+    ]
+
+    for dir_name in data_dirs:
+        files: list = glob.glob(dir_name + '/*.wav')
+
+        for file_name in files:
+            os.remove(file_name)
+            print(message.DELETE_FILE_MSG(file_name))
+
+
 if __name__ == '__main__':
     # options
     parser: argparse.ArgumentParser = argparse.ArgumentParser()
@@ -78,16 +94,18 @@ if __name__ == '__main__':
     parser.add_argument('-d', '--demo',
                         help='start demo',
                         action='store_true')
+    parser.add_argument('-c', '--clear',
+                        help='clear data',
+                        action='store_true')
     args = parser.parse_args()
 
     if args.train:
         train_mode()
-
     if args.record:
         record_mode()
-
     if args.build:
         build_mode()
-
     if args.demo:
         demo_mode()
+    if args.clear:
+        clear_mode()

@@ -15,17 +15,17 @@ RECORDING_HELP_MSG: str = 'Press enter to start recording.' + \
 
 
 def CREATED_FILE_MSG(file_name: str) -> str:
-    result: str = 'Created ' + file_name + ' .'
+    result: str = 'Created ' + file_name
     return result
 
 
 def DELETE_FILE_MSG(file_name: str) -> str:
-    result: str = 'Deleted ' + file_name + ' .'
+    result: str = 'Deleted ' + file_name
     return result
 
 
 def CREATED_DATA_MSG(n_data: int) -> str:
-    result: str = 'Created %d data.' % n_data
+    result: str = 'Created %d data' % n_data
     return result
 
 
