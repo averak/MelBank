@@ -9,7 +9,7 @@ ERROR_INVALID_SOURCE_NAME: str = FontColors.RED + \
     'Cannot find such source name. Try again.' + FontColors.RESET
 
 
-HOWTO_RECORDING_MSG: str = 'Press enter to start recording.' + \
+RECORDING_HELP_MSG: str = 'Press enter to start recording.' + \
     '\n' + \
     'Enter the <q> key to quit.'
 

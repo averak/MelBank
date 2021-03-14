@@ -36,7 +36,7 @@ def record_mode():
     recorder: record.Record() = record.Record()
     start_recording: bool = True
 
-    print(message.HOWTO_RECORDING_MSG)
+    print(message.RECORDING_HELP_MSG)
     while input() != 'q':
         if start_recording:
             recorder.start()

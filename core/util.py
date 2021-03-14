@@ -11,4 +11,4 @@ def get_number_of_files(dir_name: str, extension: str = None) -> int:
 
 
 def mkdir(dir_name: str) -> None:
-    os.makedirs(dir_name)
+    os.makedirs(dir_name, exist_ok=True)
