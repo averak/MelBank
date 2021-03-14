@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import os
 import glob
+import tqdm
 import argparse
 import numpy as np
 
@@ -13,14 +14,12 @@ from core import util
 from core import vocode
 
 
-recorder: record.Record = record.Record()
-vocoder: vocode.Vocode = vocode.Vocode()
-nnet_: nnet.NNet = nnet.NNet()
-
-
 def train_mode():
-    # FIXME
-    nnet_.train([], [])
+    x: np.ndarray = np.load(config.TEACHER_X_PATH)
+    y: np.ndarray = np.load(config.TEACHER_Y_PATH)
+
+    nnet_: nnet.NNet = nnet.NNet()
+    nnet_.train(x, y)
 
 
 def record_mode():
@@ -36,13 +35,13 @@ def record_mode():
         save_root_path = config.NOISE_ROOT_PATH
     else:
         print(message.ERROR_INVALID_SOURCE_NAME)
-        recorder.exit()
         exit(1)
 
     # mkdir & count number of exists files
     util.mkdir(save_root_path)
     save_index: int = util.get_number_of_files(save_root_path, 'wav')
 
+    recorder: record.Record = record.Record()
     start_recording: bool = True
 
     print(message.RECORDING_HELP_MSG)
@@ -62,14 +61,51 @@ def record_mode():
         start_recording = not start_recording
 
     print(message.CREATED_DATA_MSG(save_index))
+    recorder.exit()
 
 
 def build_mode():
-    # FIXME
-    return
+    # teacher data(x: frames, y: freq-masks)
+    x: list = []
+    y: list = []
+
+    speaker_files: list = glob.glob(config.SPEAKER_ROOT_PATH + '/*.wav')
+    noise_files: list = glob.glob(config.NOISE_ROOT_PATH + '/*.wav')
+
+    # convert to spectrogram
+    print(message.PROCESSING_SOURCE_MSG('speaker'))
+    speaker_specs: list = []
+    for file in tqdm.tqdm(speaker_files):
+        speaker_specs.extend(preprocessing.exec(file))
+
+    print(message.PROCESSING_SOURCE_MSG('noise'))
+    noise_specs: list = []
+    for file in tqdm.tqdm(noise_files):
+        noise_specs.extend(preprocessing.exec(file))
+
+    n_samples = max([len(speaker_specs), len(noise_specs)])
+
+    # make teacher data
+    print(message.MIXING_DATA_MSG(n_samples))
+    for i in range(n_samples):
+        speaker_spec: np.ndarray = speaker_specs[i % len(speaker_specs)]
+        noise_spec: np.ndarray = noise_specs[i % len(noise_specs)]
+        mixed_frame = speaker_spec + noise_spec
+        x.append(mixed_frame)
+
+        freq_mask = np.zeros(config.DATA_SAMPLES)
+        for f in range(config.DATA_SAMPLES):
+            if speaker_spec[f] > noise_spec[f]:
+                freq_mask[f] = 1
+        y.append(freq_mask)
+
+    # save teacher data
+    np.save(config.TEACHER_X_PATH, np.array(x))
+    np.save(config.TEACHER_Y_PATH, np.array(y))
 
 
 def demo_mode():
+    vocoder: vocode.Vocode = vocode.Vocode()
     wav: np.array = vocoder.exec(config.RECORD_WAV_PATH)
     vocoder.save(wav, config.CLEANED_WAV_PATH)
     print(message.CREATED_FILE_MSG(config.CLEANED_WAV_PATH))
@@ -119,5 +155,3 @@ if __name__ == '__main__':
         demo_mode()
     if args.clear:
         clear_mode()
-
-    recorder.exit()

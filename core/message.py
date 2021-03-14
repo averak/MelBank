@@ -25,7 +25,10 @@ def DELETE_FILE_MSG(file_name: str) -> str:
 
 
 def VOCODE_COMPLETE_MSG(file_name: str) -> str:
-    result: str = 'Vocodeed ' + FontColors.YELLOW + file_name + FontColors.RESET
+    result: str = 'Vocodeed ' + \
+        FontColors.YELLOW + \
+        file_name + \
+        FontColors.RESET
     return result
 
 
@@ -36,6 +39,16 @@ def CREATED_DATA_MSG(n_data: int) -> str:
 
 def RECORDING_VOICE_MSG(index: int) -> str:
     result: str = 'Recording %d...' % index
+    return result
+
+
+def PROCESSING_SOURCE_MSG(source_str: str) -> str:
+    result: str = 'Processing %s data...' % source_str
+    return result
+
+
+def MIXING_DATA_MSG(n_data: int) -> str:
+    result = 'Mixing %d samples...' % n_data
     return result
 
 

@@ -6,7 +6,7 @@ from core import config
 
 
 # output spectrogram
-def preprocessing(file_name: str) -> np.ndarray:
+def exec(file_name: str) -> np.ndarray:
     wav: np.ndarray = wf.read(file_name)[1]
     spec: np.ndarray = stft(wav, True)
 

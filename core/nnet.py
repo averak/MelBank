@@ -16,8 +16,7 @@ class NNet:
         drop_layer1 = layers.Dropout(0.5)(hidden_layer1)
         hidden_layer2 = layers.Dense(256, activation='relu')(drop_layer1)
         drop_layer2 = layers.Dropout(0.5)(hidden_layer2)
-        output_layer = layers.Dense(
-            config.DATA_SAMPLES, activation='sigmoid')(drop_layer2)
+        output_layer = layers.Dense(1, activation='sigmoid')(drop_layer2)
 
         # make & compile
         result: Model = Model(inputs=input_layer, outputs=output_layer)

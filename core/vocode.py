@@ -17,7 +17,7 @@ class Vocode:
         # original spectrogram
         spec: np.ndarray = preprocessing.stft(wav, False)
         # preprocessed spectrogram
-        spec_prep: np.ndarray = preprocessing.preprocessing(file_name)
+        spec_prep: np.ndarray = preprocessing.exec(file_name)
 
         # time-freq masking
         for t, frame in enumerate(spec_prep):

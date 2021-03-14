@@ -1,6 +1,8 @@
 # data path
 DATA_ROOT_PATH: str = './data'
 TEACHER_ROOT_PATH: str = DATA_ROOT_PATH + '/teacher'
+TEACHER_X_PATH: str = TEACHER_ROOT_PATH + '/x.npy'
+TEACHER_Y_PATH: str = TEACHER_ROOT_PATH + '/y.npy'
 RECORD_ROOT_PATH: str = DATA_ROOT_PATH + '/record'
 SPEAKER_ROOT_PATH: str = RECORD_ROOT_PATH + '/speaker'
 NOISE_ROOT_PATH: str = RECORD_ROOT_PATH + '/noise'
