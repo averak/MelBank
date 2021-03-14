@@ -15,12 +15,17 @@ RECORDING_HELP_MSG: str = 'Press enter to start recording.' + \
 
 
 def CREATED_FILE_MSG(file_name: str) -> str:
-    result: str = 'Created ' + file_name
+    result: str = 'Created ' + FontColors.YELLOW + file_name + FontColors.RESET
     return result
 
 
 def DELETE_FILE_MSG(file_name: str) -> str:
-    result: str = 'Deleted ' + file_name
+    result: str = 'Deleted ' + FontColors.YELLOW + file_name + FontColors.RESET
+    return result
+
+
+def VOCODE_COMPLETE_MSG(file_name: str) -> str:
+    result: str = 'Vocodeed ' + FontColors.YELLOW + file_name + FontColors.RESET
     return result
 
 

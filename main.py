@@ -61,6 +61,8 @@ def record_mode():
 
         start_recording = not start_recording
 
+    print(message.CREATED_DATA_MSG(save_index))
+
 
 def build_mode():
     # FIXME
@@ -70,6 +72,7 @@ def build_mode():
 def demo_mode():
     wav: np.array = vocoder.exec(config.RECORD_WAV_PATH)
     vocoder.save(wav, config.CLEANED_WAV_PATH)
+    print(message.CREATED_FILE_MSG(config.CLEANED_WAV_PATH))
 
 
 def clear_mode():
