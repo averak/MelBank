@@ -7,10 +7,10 @@ from core import config
 
 
 class NNet:
-    def __init__(self):
-        self.nnet: Model = self.make_nnet()
+    def __init__(self, load_weights: bool = True):
+        self.nnet: Model = self.make_nnet(load_weights)
 
-    def make_nnet(self) -> Model:
+    def make_nnet(self, load_weights: bool) -> Model:
         input_layer = layers.Input(shape=config.INPUT_SHAPE)
         hidden_layer1 = layers.Dense(256, activation='relu')(input_layer)
         drop_layer1 = layers.Dropout(0.5)(hidden_layer1)
@@ -27,7 +27,7 @@ class NNet:
         )
 
         # load trained weights
-        if os.path.exists(config.MODEL_PATH):
+        if load_weights and os.path.exists(config.MODEL_PATH):
             result.load_weights(config.MODEL_PATH)
 
         return result

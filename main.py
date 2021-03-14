@@ -18,7 +18,7 @@ def train_mode():
     x: np.ndarray = np.load(config.TEACHER_X_PATH)
     y: np.ndarray = np.load(config.TEACHER_Y_PATH)
 
-    nnet_: nnet.NNet = nnet.NNet()
+    nnet_: nnet.NNet = nnet.NNet(False)
     nnet_.train(x, y)
 
 
