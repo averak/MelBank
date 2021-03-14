@@ -2,6 +2,7 @@
 import os
 import glob
 import argparse
+import numpy as np
 
 from core import config
 from core import message
@@ -9,11 +10,17 @@ from core import nnet
 from core import preprocessing
 from core import record
 from core import util
+from core import vocode
+
+
+recorder: record.Record = record.Record()
+vocoder: vocode.Vocode = vocode.Vocode()
+nnet_: nnet.NNet = nnet.NNet()
 
 
 def train_mode():
-    model: nnet.NNet = nnet.NNet()
-    model.train([], [])
+    # FIXME
+    nnet_.train([], [])
 
 
 def record_mode():
@@ -29,13 +36,13 @@ def record_mode():
         save_root_path = config.NOISE_ROOT_PATH
     else:
         print(message.ERROR_INVALID_SOURCE_NAME)
+        recorder.exit()
         exit(1)
 
     # mkdir & count number of exists files
     util.mkdir(save_root_path)
     save_index: int = util.get_number_of_files(save_root_path, 'wav')
 
-    recorder: record.Record() = record.Record()
     start_recording: bool = True
 
     print(message.RECORDING_HELP_MSG)
@@ -54,15 +61,15 @@ def record_mode():
 
         start_recording = not start_recording
 
-    recorder.exit()
-
 
 def build_mode():
-    preprocessing.exec(config.RECORD_WAV_PATH)
+    # FIXME
+    return
 
 
 def demo_mode():
-    return
+    wav: np.array = vocoder.exec(config.RECORD_WAV_PATH)
+    vocoder.save(wav, config.CLEANED_WAV_PATH)
 
 
 def clear_mode():
@@ -109,3 +116,5 @@ if __name__ == '__main__':
         demo_mode()
     if args.clear:
         clear_mode()
+
+    recorder.exit()

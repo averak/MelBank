@@ -5,19 +5,19 @@ from scipy import signal
 from core import config
 
 
-# exec preprocessing
-def exec(file_name: str) -> np.ndarray:
+# output spectrogram
+def preprocessing(file_name: str) -> np.ndarray:
     wav: np.ndarray = wf.read(file_name)[1]
     spec: np.ndarray = stft(wav, True)
 
     result: np.ndarray = np.empty((0, config.DATA_SAMPLES))
 
-    for sample in spec:
+    for frame in spec:
         # preprocessing
-        sample = normalize(sample)
-        sample = filter(sample)
+        frame = normalize(frame)
+        frame = filter(frame)
 
-        result = np.vstack([result, sample])
+        result = np.vstack([result, frame])
 
     return result
 
@@ -34,6 +34,12 @@ def stft(wav: np.ndarray, to_log: bool) -> np.ndarray:
     # time <-> freq
     result = result.T
 
+    return result
+
+
+# convert spectrogram -> wave
+def istft(spec: np.ndarray) -> np.ndarray:
+    result: np.ndarray = signal.istft(spec.T, fs=config.WAVE_RATE)[1]
     return result
 
 

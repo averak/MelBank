@@ -52,5 +52,5 @@ class NNet:
 
     # predict the time-freq mask
     def predict(self, data: np.ndarray) -> np.ndarray:
-        result: np.ndarray = self.nnet.predict(data)[0]
+        result: np.ndarray = self.nnet.predict(data)[0][0]
         return result
