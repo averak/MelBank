@@ -25,7 +25,7 @@ def DELETE_FILE_MSG(file_name: str) -> str:
 
 
 def VOCODE_COMPLETE_MSG(file_name: str) -> str:
-    result: str = 'Vocodeed ' + \
+    result: str = 'Vocodede ' + \
         FontColors.YELLOW + \
         file_name + \
         FontColors.RESET
