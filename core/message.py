@@ -52,11 +52,16 @@ def MIXING_DATA_MSG(n_data: int) -> str:
     return result
 
 
+def ACCURACY_MSG(accuracy: float) -> str:
+    result: str = 'Accuracy: %3.1f%%' % (accuracy * 100)
+    return result
+
+
 def SOURCE_INPUT_GUIDE(default_source_str: str) -> str:
     result: str = 'which source type? ' + \
         FontColors.GREEN + \
         default_source_str + \
-        ' (speaker or noise)' + \
+        ' (speech or noise)' + \
         FontColors.RESET + \
         ' : '
     return result

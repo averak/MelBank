@@ -11,6 +11,9 @@ wave = "*"
 pyaudio = "*"
 matplotlib = "*"
 tqdm = "*"
+sklearn = "*"
+pyroomacoustics = "*"
+pydub = "*"
 
 [dev-packages]
 flake8 = "*"

@@ -1,25 +1,48 @@
 import os
 from tensorflow.keras import layers
-from tensorflow.keras import Model
+from tensorflow.keras import Sequential
 import numpy as np
 
 from core import config
+from core import message
 
 
 class NNet:
     def __init__(self, load_weights: bool = True):
-        self.nnet: Model = self.make_nnet(load_weights)
+        self.nnet: Sequential = self.make_nnet(load_weights)
 
-    def make_nnet(self, load_weights: bool) -> Model:
-        input_layer = layers.Input(shape=config.INPUT_SHAPE)
-        hidden_layer1 = layers.Dense(256, activation='relu')(input_layer)
-        drop_layer1 = layers.Dropout(0.5)(hidden_layer1)
-        hidden_layer2 = layers.Dense(256, activation='relu')(drop_layer1)
-        drop_layer2 = layers.Dropout(0.5)(hidden_layer2)
-        output_layer = layers.Dense(1, activation='sigmoid')(drop_layer2)
+    def make_nnet(self, load_weights: bool) -> Sequential:
+        result: Sequential = Sequential()
+        result.add(layers.Input(shape=config.INPUT_SHAPE))
+
+        # convolution 1st layer
+        result.add(layers.Conv2D(32, (3, 3), padding='same'))
+        result.add(layers.BatchNormalization())
+        result.add(layers.Activation('relu'))
+        result.add(layers.MaxPool2D())
+        result.add(layers.Dropout(config.DROPOUT_RATE))
+
+        # convolution 2st layer
+        result.add(layers.Conv2D(32, (3, 3), padding='same'))
+        result.add(layers.BatchNormalization())
+        result.add(layers.Activation('relu'))
+        result.add(layers.MaxPool2D())
+        result.add(layers.Dropout(config.DROPOUT_RATE))
+
+        # fully connected 1st layer
+        result.add(layers.Flatten())
+        result.add(layers.Dense(32, use_bias=False))
+        result.add(layers.BatchNormalization())
+        result.add(layers.Activation('relu'))
+        result.add(layers.Dropout(config.DROPOUT_RATE))
+
+        # fully connected final layer
+        result.add(layers.Dense(1))
+        result.add(layers.Activation('sigmoid'))
+
+        # result.summary()
 
         # make & compile
-        result: Model = Model(inputs=input_layer, outputs=output_layer)
         result.compile(
             optimizer=config.OPTIMIZER,
             loss=config.LOSS,
@@ -49,7 +72,10 @@ class NNet:
         # save final weights
         self.nnet.save_weights(config.MODEL_PATH)
 
-    # predict the time-freq mask
-    def predict(self, data: np.ndarray) -> np.ndarray:
-        result: np.ndarray = self.nnet.predict(data)[0][0]
+    def predict(self, feature: np.ndarray) -> int:
+        result: int = np.argmax(self.nnet.predict(np.array([feature]))[0])
+        return result
+
+    def evaluate(self, x: np.ndarray, y: np.ndarray) -> float:
+        result: float = self.nnet.evaluate(x, y)[1]
         return result

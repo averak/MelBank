@@ -1,29 +1,39 @@
 import numpy as np
+import sklearn.preprocessing
+import pyroomacoustics as pra
 import scipy.io.wavfile as wf
 from scipy import signal
+from pydub import AudioSegment
+from pydub.silence import split_on_silence
 
 from core import config
 
 
-# output spectrogram
-def exec(file_name: str) -> np.ndarray:
+def extract_feature(file_name: str, cleaning: bool = True) -> np.ndarray:
+    """ extract preprocessed feature """
+
+    # read wav file
     wav: np.ndarray = wf.read(file_name)[1]
+    wav = wav.astype(np.float32)
+    # cleaning wave
+    if cleaning:
+        wav = noise_reduction(wav)
+        wav = voice_activity(wav)
+    # convert to spectrogram
     spec: np.ndarray = stft(wav, True)
 
-    result: np.ndarray = np.empty((0, config.DATA_SAMPLES))
-
+    result: list = []
     for frame in spec:
-        # preprocessing
         frame = normalize(frame)
-        frame = filter(frame)
+        frame = filtering(frame)
+        result.append(frame)
 
-        result = np.vstack([result, frame])
-
-    return result
+    return np.array(result)
 
 
-# convert wave -> spectrogram
 def stft(wav: np.ndarray, to_log: bool) -> np.ndarray:
+    """ convert wave -> spectrogram """
+
     result: np.ndarray = signal.stft(wav, fs=config.WAVE_RATE)[2]
 
     # convert to log scale
@@ -37,39 +47,69 @@ def stft(wav: np.ndarray, to_log: bool) -> np.ndarray:
     return result
 
 
-# convert spectrogram -> wave
 def istft(spec: np.ndarray) -> np.ndarray:
+    """ convert spectrogram -> wave """
+
     result: np.ndarray = signal.istft(spec.T, fs=config.WAVE_RATE)[1]
     return result
 
 
-# normalize to 0~1
-def normalize(data: np.ndarray) -> np.ndarray:
-    n_min: int = data.min(keepdims=True)
-    n_max: int = data.max(keepdims=True)
+def normalize(feature: np.ndarray) -> np.ndarray:
+    """ min-max normalization """
 
-    result: np.ndarray = None
+    result: np.ndarray = feature.flatten()
+    result_shape: tuple = feature.shape
 
-    if (n_max - n_min) == 0:
-        result = data
-    else:
-        result = (data - n_min) / (n_max - n_min)
+    result = sklearn.preprocessing.minmax_scale(result)
+    result = np.reshape(result, result_shape)
 
     return result
 
 
-# band-pass filter
-def filter(data: np.ndarray) -> np.ndarray:
-    # edge freq [Hz]
-    low_edge = 100
-    high_edge = 8000
+def filtering(feature: np.ndarray) -> np.ndarray:
+    """ band-pass filtering """
 
-    delte = (config.WAVE_RATE / 2) / config.DATA_SAMPLES
-    bpf: np.ndarray = np.zeros(config.DATA_SAMPLES)
+    n_sample: int = len(feature)
+    delte = (config.WAVE_RATE / 2) / n_sample
+    bpf: np.ndarray = np.zeros(n_sample)
 
-    for i in range(config.DATA_SAMPLES):
+    for i in range(n_sample):
         freq: float = i * delte
-        if freq > low_edge and freq < high_edge:
+        if freq > config.BPF_LOW_FREQ and freq < config.BPF_HIGH_FREQ:
             bpf[i] = 1
 
-    return data * bpf
+    return feature * bpf
+
+
+# spectral subtraction
+def noise_reduction(feature: np.ndarray) -> np.ndarray:
+    result: np.ndarray = pra.denoise.spectral_subtraction.apply_spectral_sub(
+        feature, config.FFT_LENGTH)
+    return result
+
+
+# extract only voice activity
+def voice_activity(feature: str) -> np.ndarray:
+    sound: AudioSegment = AudioSegment(
+        data=bytes(feature.astype(np.int16)),
+        sample_width=config.WAVE_WIDTH,
+        frame_rate=config.WAVE_RATE,
+        channels=config.WAVE_CHANNELS
+    )
+
+    # extract only voice activity
+    chunks: list = split_on_silence(
+        sound,
+        min_silence_len=config.MIN_SILENCE_LENGTH,
+        silence_thresh=config.SILENCE_THRESH,
+        keep_silence=config.KEEP_SILENCE,
+    )
+
+    # select the highest volume
+    result: np.ndarray = feature
+    for chunk in chunks:
+        chunk_wav: list = chunk.get_array_of_samples()
+        result = np.append(result, np.array(chunk_wav))
+
+    result = result.astype(np.float32)
+    return result

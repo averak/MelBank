@@ -1,6 +1,5 @@
 import numpy as np
 import scipy.io.wavfile as wf
-from scipy import signal
 
 from core import config
 from core import nnet
@@ -9,15 +8,16 @@ from core import preprocessing
 
 class Vocode:
     def __init__(self):
-        self.nnet: nnet.NNet() = nnet.NNet()
+        self.nnet: nnet.NNet = nnet.NNet()
 
-    # vocode: output wave
     def exec(self, file_name: str) -> np.ndarray:
+        """ vocode separated wave """
+
         wav: np.ndarray = wf.read(file_name)[1]
         # original spectrogram
         spec: np.ndarray = preprocessing.stft(wav, False)
         # preprocessed spectrogram
-        spec_prep: np.ndarray = preprocessing.exec(file_name)
+        spec_prep: np.ndarray = preprocessing.extract_feature(file_name)
 
         # time-freq masking
         for t, frame in enumerate(spec_prep):
@@ -28,7 +28,6 @@ class Vocode:
         result: np.ndarray = preprocessing.istft(spec)
         return result
 
-    # masking rule
     def masking(self, frame: np.ndarray, freq_mask: np.ndarray) -> np.ndarray:
         return frame * freq_mask
 

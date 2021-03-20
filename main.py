@@ -1,41 +1,48 @@
 #!/usr/bin/env python
 import os
+import sys
 import glob
 import tqdm
+import shutil
 import argparse
 import numpy as np
 
 from core import config
 from core import message
-from core import nnet
-from core import preprocessing
-from core import record
 from core import util
-from core import vocode
 
 
 def train_mode():
+    from core import nnet
+    from sklearn.model_selection import train_test_split
+
     x: np.ndarray = np.load(config.TEACHER_X_PATH)
     y: np.ndarray = np.load(config.TEACHER_Y_PATH)
 
+    # split data for training & validation
+    x_train, x_val, y_train, y_val = train_test_split(x, y, train_size=0.8)
+
     nnet_: nnet.NNet = nnet.NNet(False)
-    nnet_.train(x, y)
+    nnet_.train(x_train, y_train)
+    print(message.ACCURACY_MSG(nnet_.evaluate(x_val, y_val)))
 
 
 def record_mode():
-    default_source: str = 'speaker'
+    from core import record
+
+    default_source: str = 'speech'
     input_str: str = input(message.SOURCE_INPUT_GUIDE(default_source)) \
         or default_source
 
     # set save path
     save_root_path: str = ''
-    if input_str == 'speaker':
-        save_root_path = config.SPEAKER_ROOT_PATH
+    if input_str == 'speech':
+        save_root_path = config.SPEECH_ROOT_PATH
     elif input_str == 'noise':
         save_root_path = config.NOISE_ROOT_PATH
     else:
         print(message.ERROR_INVALID_SOURCE_NAME)
-        exit(1)
+        sys.exit(1)
 
     # mkdir & count number of exists files
     util.mkdir(save_root_path)
@@ -45,59 +52,68 @@ def record_mode():
     start_recording: bool = True
 
     print(message.RECORDING_HELP_MSG)
-    while input() != 'q':
-        if start_recording:
-            recorder.start()
-            print(message.RECORDING_VOICE_MSG(save_index), end='')
-        else:
-            recorder.stop()
+    while True:
+        try:
+            if input() == 'q':
+                break
 
-            # <save_root_path>/<save_index>.wav
-            file_name: str = '%s/%d.wav' % (save_root_path, save_index)
-            recorder.save(file_name)
-            print(message.CREATED_FILE_MSG(file_name))
-            save_index += 1
+            if start_recording:
+                recorder.start()
+                print(message.RECORDING_VOICE_MSG(save_index), end='')
+            else:
+                recorder.stop()
 
-        start_recording = not start_recording
+                # <save_root_path>/<save_index>.wav
+                file_name: str = '%s/%d.wav' % (save_root_path, save_index)
+                recorder.save(file_name)
+                print(message.CREATED_FILE_MSG(file_name))
+                save_index += 1
+
+            start_recording = not start_recording
+
+        except KeyboardInterrupt:
+            break
 
     print(message.CREATED_DATA_MSG(save_index))
     recorder.exit()
 
 
 def build_mode():
-    # teacher data(x: frames, y: freq-masks)
+    from core import preprocessing
+
+    # teacher data(x: freq, y: freq-masks)
     x: list = []
     y: list = []
 
-    speaker_files: list = glob.glob(config.SPEAKER_ROOT_PATH + '/*.wav')
-    noise_files: list = glob.glob(config.NOISE_ROOT_PATH + '/*.wav')
+    # speech data
+    print(message.PROCESSING_SOURCE_MSG('speech'))
+    speech_files: list = glob.glob(config.SPEECH_ROOT_PATH + '/*.wav')
+    speech_samples: list = []
+    for file in tqdm.tqdm(speech_files):
+        speech_samples.extend(preprocessing.extract_feature(file))
 
-    # convert to spectrogram
-    print(message.PROCESSING_SOURCE_MSG('speaker'))
-    speaker_specs: list = []
-    for file in tqdm.tqdm(speaker_files):
-        speaker_specs.extend(preprocessing.exec(file))
-
+    # noise data
     print(message.PROCESSING_SOURCE_MSG('noise'))
-    noise_specs: list = []
+    noise_files: list = glob.glob(config.NOISE_ROOT_PATH + '/*.wav')
+    noise_samples: list = []
     for file in tqdm.tqdm(noise_files):
-        noise_specs.extend(preprocessing.exec(file))
+        noise_samples.extend(preprocessing.extract_feature(file, False))
 
-    n_samples = max([len(speaker_specs), len(noise_specs)])
+    # mixing
+    print(message.MIXING_DATA_MSG(len(speech_samples) + len(noise_samples)))
+    for speech_frame in speech_samples:
+        for noise_frame in noise_samples:
+            sn_rate: float = np.random.rand()
+            noise_frame *= sn_rate
+            mixed_frame = speech_frame + noise_frame
 
-    # make teacher data
-    print(message.MIXING_DATA_MSG(n_samples))
-    for i in range(n_samples):
-        speaker_spec: np.ndarray = speaker_specs[i % len(speaker_specs)]
-        noise_spec: np.ndarray = noise_specs[i % len(noise_specs)]
-        mixed_frame = speaker_spec + noise_spec
-        x.append(mixed_frame)
+            freq_mask = np.zeros(config.FREQ_LENGTH)
+            for fi in range(config.FREQ_LENGTH):
+                if speech_frame[fi] > noise_frame[fi]:
+                    freq_mask[fi] = 1
 
-        freq_mask = np.zeros(config.DATA_SAMPLES)
-        for f in range(config.DATA_SAMPLES):
-            if speaker_spec[f] > noise_spec[f]:
-                freq_mask[f] = 1
-        y.append(freq_mask)
+            x.append(mixed_frame)
+            y.append(freq_mask)
 
     # save teacher data
     np.save(config.TEACHER_X_PATH, np.array(x))
@@ -105,23 +121,28 @@ def build_mode():
 
 
 def demo_mode():
-    vocoder: vocode.Vocode = vocode.Vocode()
-    wav: np.array = vocoder.exec(config.RECORD_WAV_PATH)
-    vocoder.save(wav, config.CLEANED_WAV_PATH)
-    print(message.CREATED_FILE_MSG(config.CLEANED_WAV_PATH))
+    from core import demo
+
+    demo_: demo.Demo = demo.Demo()
+    demo_.exec()
 
 
 def clear_mode():
     data_dirs: list = [
-        config.SPEAKER_ROOT_PATH,
+        config.SPEECH_ROOT_PATH,
         config.NOISE_ROOT_PATH,
+        config.MODEL_ROOT_PATH,
     ]
 
     for dir_name in data_dirs:
-        files: list = glob.glob(dir_name + '/*.wav')
+        files: list = glob.glob(dir_name + '/*')
 
         for file_name in files:
-            os.remove(file_name)
+            if os.path.isfile(file_name):
+                os.remove(file_name)
+            else:
+                shutil.rmtree(file_name)
+
             print(message.DELETE_FILE_MSG(file_name))
 
 
