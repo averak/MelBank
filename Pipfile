@@ -24,7 +24,7 @@ python_version = "3.8"
 
 [scripts]
 format = "autopep8 -ivr ."
-lint = "flake8 --show-source --ignore=E501 ."
+lint = "flake8 --show-source ."
 train = "python main.py --train"
 record = "python main.py --record"
 build = "python main.py --build"
