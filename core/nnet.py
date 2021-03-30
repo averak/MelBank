@@ -4,7 +4,6 @@ from tensorflow.keras import Sequential
 import numpy as np
 
 from core import config
-from core import message
 
 
 class NNet:

@@ -6,7 +6,6 @@ import numpy as np
 import anal
 
 from core import config
-from core import message
 from core import preprocessing
 from core import record
 from core import vocode
