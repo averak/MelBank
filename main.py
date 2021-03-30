@@ -3,6 +3,7 @@ import os
 import sys
 import glob
 import tqdm
+import random
 import shutil
 import argparse
 import numpy as np
@@ -101,8 +102,8 @@ def build_mode():
 
     # mixing
     print(message.MIXING_DATA_MSG(len(speech_samples) + len(noise_samples)))
-    for speech_frame in speech_samples:
-        for noise_frame in noise_samples:
+    for speech_frame in tqdm.tqdm(speech_samples):
+        for noise_frame in random.choices(noise_samples, k=config.N_MIXED_NOISES):
             sn_rate: float = np.random.rand()
             noise_frame *= sn_rate
             mixed_frame = speech_frame + noise_frame

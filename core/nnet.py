@@ -15,21 +15,23 @@ class NNet:
         result.add(layers.Input(shape=config.INPUT_SHAPE))
 
         # convolution 1st layer
-        result.add(layers.Conv2D(32, (3, 3), padding='same'))
+        # result.add(layers.Conv2D(32, (3, 3), padding='same'))
+        result.add(layers.Dense(32))
         result.add(layers.BatchNormalization())
         result.add(layers.Activation('relu'))
-        result.add(layers.MaxPool2D())
+        # result.add(layers.MaxPool2D())
         result.add(layers.Dropout(config.DROPOUT_RATE))
 
         # convolution 2st layer
-        result.add(layers.Conv2D(32, (3, 3), padding='same'))
+        # result.add(layers.Conv2D(32, (3, 3), padding='same'))
+        result.add(layers.Dense(32))
         result.add(layers.BatchNormalization())
         result.add(layers.Activation('relu'))
-        result.add(layers.MaxPool2D())
+        # result.add(layers.MaxPool2D())
         result.add(layers.Dropout(config.DROPOUT_RATE))
 
         # fully connected 1st layer
-        result.add(layers.Flatten())
+        # result.add(layers.Flatten())
         result.add(layers.Dense(32, use_bias=False))
         result.add(layers.BatchNormalization())
         result.add(layers.Activation('relu'))
