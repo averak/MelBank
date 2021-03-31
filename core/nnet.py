@@ -15,30 +15,28 @@ class NNet:
         result.add(layers.Input(shape=config.INPUT_SHAPE))
 
         # convolution 1st layer
-        # result.add(layers.Conv2D(32, (3, 3), padding='same'))
-        result.add(layers.Dense(32))
+        result.add(layers.Conv1D(32, 3, padding='same'))
         result.add(layers.BatchNormalization())
         result.add(layers.Activation('relu'))
-        # result.add(layers.MaxPool2D())
+        result.add(layers.MaxPool1D())
         result.add(layers.Dropout(config.DROPOUT_RATE))
 
         # convolution 2st layer
-        # result.add(layers.Conv2D(32, (3, 3), padding='same'))
-        result.add(layers.Dense(32))
+        result.add(layers.Conv1D(32, 3, padding='same'))
         result.add(layers.BatchNormalization())
         result.add(layers.Activation('relu'))
-        # result.add(layers.MaxPool2D())
+        result.add(layers.MaxPool1D())
         result.add(layers.Dropout(config.DROPOUT_RATE))
 
         # fully connected 1st layer
-        # result.add(layers.Flatten())
+        result.add(layers.Flatten())
         result.add(layers.Dense(32, use_bias=False))
         result.add(layers.BatchNormalization())
         result.add(layers.Activation('relu'))
         result.add(layers.Dropout(config.DROPOUT_RATE))
 
         # fully connected final layer
-        result.add(layers.Dense(1))
+        result.add(layers.Dense(config.FREQ_LENGTH))
         result.add(layers.Activation('sigmoid'))
 
         # result.summary()
@@ -74,7 +72,7 @@ class NNet:
         self.nnet.save_weights(config.MODEL_PATH)
 
     def predict(self, feature: np.ndarray) -> int:
-        result: int = np.argmax(self.nnet.predict(np.array([feature]))[0])
+        result: int = self.nnet.predict(np.array([feature]))[0]
         return result
 
     def evaluate(self, x: np.ndarray, y: np.ndarray) -> float:
