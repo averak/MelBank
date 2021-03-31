@@ -31,7 +31,7 @@ SILENCE_THRESH: int = -20
 KEEP_SILENCE: int = 100
 
 # training params
-EPOCHS: int = 20
+EPOCHS: int = 50
 BATCH_SIZE: int = 32
 VALIDATION_SPLIT: float = 0.1
 DROPOUT_RATE: float = 0.5

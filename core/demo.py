@@ -95,6 +95,7 @@ class Demo:
         amp_spec = np.fft.fft(wav)
         # power spectrum
         power_spec = [np.sqrt(c.real ** 2 + c.imag ** 2) for c in amp_spec]
+        power_spec = np.array(power_spec)
         # band-pass filter
         power_spec = preprocessing.filtering(power_spec)
 
@@ -174,6 +175,7 @@ class Demo:
         self.vocoder.save(wav, config.CLEANED_WAV_PATH)
 
         # FIXME: paly cleaned wav
+        os.system('afplay %s' % config.CLEANED_WAV_PATH)
 
 
 if __name__ == '__main__':

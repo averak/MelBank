@@ -14,19 +14,13 @@ class NNet:
         result: Sequential = Sequential()
         result.add(layers.Input(shape=config.INPUT_SHAPE))
 
-        # convolution 1st layer
-        result.add(layers.Conv1D(32, 3, padding='same'))
-        result.add(layers.BatchNormalization())
-        result.add(layers.Activation('relu'))
-        result.add(layers.MaxPool1D())
-        result.add(layers.Dropout(config.DROPOUT_RATE))
-
-        # convolution 2st layer
-        result.add(layers.Conv1D(32, 3, padding='same'))
-        result.add(layers.BatchNormalization())
-        result.add(layers.Activation('relu'))
-        result.add(layers.MaxPool1D())
-        result.add(layers.Dropout(config.DROPOUT_RATE))
+        # dilated convolution layers
+        for rate in range(3):
+            result.add(layers.Conv1D(32, 3, padding='same', dilation_rate=rate + 1))
+            result.add(layers.BatchNormalization())
+            result.add(layers.Activation('relu'))
+            result.add(layers.MaxPool1D())
+            result.add(layers.Dropout(config.DROPOUT_RATE))
 
         # fully connected 1st layer
         result.add(layers.Flatten())

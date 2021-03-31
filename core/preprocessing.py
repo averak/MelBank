@@ -9,23 +9,26 @@ from pydub.silence import split_on_silence
 from core import config
 
 
-def extract_feature(file_name: str, cleaning: bool = True) -> np.ndarray:
+def extract_feature(file_name: str, do_noise_reduction: bool = True, do_remove_silence: bool = True, do_normalize: bool = True, to_log: bool = True) -> np.ndarray:
     """ extract preprocessed feature """
 
     # read wav file
     wav: np.ndarray = wf.read(file_name)[1]
     wav = wav.astype(np.float32)
     # cleaning wave
-    if cleaning:
+    if do_noise_reduction:
         wav = noise_reduction(wav)
-        wav = voice_activity(wav)
+    if do_remove_silence:
+        wav = remove_silence(wav)
     # convert to spectrogram
-    spec: np.ndarray = stft(wav, True)
+    spec: np.ndarray = stft(wav, to_log)
 
     result: list = []
     for frame in spec:
-        frame = normalize(frame)
+        if do_normalize:
+            frame = normalize(frame)
         frame = filtering(frame)
+        frame = np.reshape(frame, config.INPUT_SHAPE)
         result.append(frame)
 
     return np.array(result)
@@ -77,6 +80,7 @@ def filtering(feature: np.ndarray) -> np.ndarray:
         freq: float = i * delte
         if freq > config.BPF_LOW_FREQ and freq < config.BPF_HIGH_FREQ:
             bpf[i] = 1
+    bpf = np.reshape(bpf, feature.shape)
 
     return feature * bpf
 
@@ -89,7 +93,7 @@ def noise_reduction(feature: np.ndarray) -> np.ndarray:
 
 
 # extract only voice activity
-def voice_activity(feature: str) -> np.ndarray:
+def remove_silence(feature: str) -> np.ndarray:
     sound: AudioSegment = AudioSegment(
         data=bytes(feature.astype(np.int16)),
         sample_width=config.WAVE_WIDTH,
