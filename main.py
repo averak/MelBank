@@ -98,13 +98,13 @@ def build_mode():
     noise_files: list = glob.glob(config.NOISE_ROOT_PATH + '/*.wav')
     noise_samples: list = []
     for file in tqdm.tqdm(noise_files):
-        noise_samples.extend(preprocessing.extract_feature(file, False))
+        noise_samples.extend(preprocessing.extract_feature(file, False, False))
 
     # mixing
     print(message.MIXING_DATA_MSG(len(speech_samples) + len(noise_samples)))
     for speech_frame in tqdm.tqdm(speech_samples):
         for noise_frame in random.choices(noise_samples, k=config.N_MIXED_NOISES):
-            sn_rate: float = np.random.rand()
+            sn_rate: float = 1.0
             noise_frame *= sn_rate
             mixed_frame = speech_frame + noise_frame
 
@@ -126,6 +126,15 @@ def demo_mode():
 
     demo_: demo.Demo = demo.Demo()
     demo_.exec()
+
+
+def vocode_mode():
+    from core import vocode
+
+    vocoder = vocode.Vocode()
+    wav = vocoder.exec(config.RECORD_WAV_PATH, True)
+    vocoder.save(wav, config.CLEANED_WAV_PATH)
+    print(message.VOCODE_COMPLETE_MSG(config.CLEANED_WAV_PATH))
 
 
 def clear_mode():
@@ -162,6 +171,9 @@ if __name__ == '__main__':
     parser.add_argument('-d', '--demo',
                         help='start demo',
                         action='store_true')
+    parser.add_argument('-v', '--vocode',
+                        help='vocode wave',
+                        action='store_true')
     parser.add_argument('-c', '--clear',
                         help='clear data',
                         action='store_true')
@@ -175,5 +187,7 @@ if __name__ == '__main__':
         build_mode()
     if args.demo:
         demo_mode()
+    if args.vocode:
+        vocode_mode()
     if args.clear:
         clear_mode()
