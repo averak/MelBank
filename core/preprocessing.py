@@ -25,8 +25,8 @@ def extract_feature(file_name: str, do_noise_reduction: bool = True, do_remove_s
 
     result: list = []
     for frame in spec:
-        # if do_normalize:
-        #     frame = normalize(frame)
+        if do_normalize:
+            frame = normalize(frame)
         frame = filtering(frame)
         frame = np.reshape(frame, config.INPUT_SHAPE)
         result.append(frame)

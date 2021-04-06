@@ -24,7 +24,7 @@ class NNet:
 
         # fully connected 1st layer
         result.add(layers.Flatten())
-        result.add(layers.Dense(32))
+        result.add(layers.Dense(32, use_bias=False))
         result.add(layers.BatchNormalization())
         result.add(layers.Activation('relu'))
         result.add(layers.Dropout(config.DROPOUT_RATE))

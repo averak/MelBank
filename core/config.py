@@ -24,7 +24,7 @@ INPUT_SHAPE: tuple = (FREQ_LENGTH, 1)
 
 # wave preprocessing config
 BPF_LOW_FREQ: int = 100
-BPF_HIGH_FREQ: int = 8000
+BPF_HIGH_FREQ: int = 5000
 FFT_LENGTH: int = 512
 MIN_SILENCE_LENGTH: int = 100
 SILENCE_THRESH: int = -20
