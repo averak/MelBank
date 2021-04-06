@@ -15,7 +15,7 @@ class Vocode:
         """ vocode separated wave """
 
         # original spectrogram
-        spec: np.ndarray = preprocessing.extract_feature(file_name, False, False, False, False)
+        spec: np.ndarray = preprocessing.extract_feature(file_name, True, False, False, False)
         # preprocessed spectrogram
         spec_prep: np.ndarray = preprocessing.extract_feature(file_name, True, False)
 
@@ -29,7 +29,7 @@ class Vocode:
         return result
 
     def masking(self, frame: np.ndarray, freq_mask: np.ndarray) -> np.ndarray:
-        freq_mask = np.where(freq_mask < 0.5, 0, 1)
+        freq_mask = np.where(freq_mask < np.median(freq_mask) - 0.1, 0, 1)
         freq_mask = np.reshape(freq_mask, frame.shape)
         return frame * freq_mask
 

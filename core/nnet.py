@@ -19,12 +19,12 @@ class NNet:
             result.add(layers.Conv1D(32, 3, padding='same', dilation_rate=rate + 1))
             result.add(layers.BatchNormalization())
             result.add(layers.Activation('relu'))
-            result.add(layers.MaxPool1D())
+            # result.add(layers.MaxPool1D())
             result.add(layers.Dropout(config.DROPOUT_RATE))
 
         # fully connected 1st layer
         result.add(layers.Flatten())
-        result.add(layers.Dense(32, use_bias=False))
+        result.add(layers.Dense(32))
         result.add(layers.BatchNormalization())
         result.add(layers.Activation('relu'))
         result.add(layers.Dropout(config.DROPOUT_RATE))

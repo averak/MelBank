@@ -32,9 +32,9 @@ KEEP_SILENCE: int = 100
 
 # training params
 EPOCHS: int = 50
-BATCH_SIZE: int = 32
+BATCH_SIZE: int = 64
 VALIDATION_SPLIT: float = 0.1
-DROPOUT_RATE: float = 0.5
+DROPOUT_RATE: float = 0.3
 OPTIMIZER: str = 'adam'
 LOSS: str = 'binary_crossentropy'
 METRICS: list = ['accuracy']

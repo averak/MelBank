@@ -110,7 +110,7 @@ def build_mode():
 
             freq_mask = np.zeros(config.FREQ_LENGTH)
             for fi in range(config.FREQ_LENGTH):
-                if speech_frame[fi] > noise_frame[fi]:
+                if abs(speech_frame[fi]) > abs(noise_frame[fi]):
                     freq_mask[fi] = 1
 
             x.append(mixed_frame)
